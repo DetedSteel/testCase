@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav nav_top">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__item nav__item_picture" href="#"
+              ><img src="images/location.svg" alt="locationIcon" />
+              <p class="text_16">Магазины</p></a
+            >
+          </li>
+          <li>
+            <a class="nav__item nav__item_picture" href="#"
+              ><img src="images/mail.svg" alt="email" />
+              <p class="text_16">info@kraskizdes.ru</p></a
+            >
+          </li>
+        </ul>
+        <ul class="nav__list nav__list_right">
+          <li class="nav__item">
+            <a class="text_16" href="#">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a class="text_16" href="#">Оплата</a>
+          </li>
+          <li class="nav__item">
+            <a class="text_16" href="#">Возврат</a>
+          </li>
+          <li class="nav__item">
+            <a class="text_16" href="#">Помощь</a>
+          </li>
+          <li class="nav__item">
+            <a class="text_16" href="#">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="text_16" href="#">Для бизнеса</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="searchBlock">
+        <a href="#" class="searchBlock__logo"><img src="images/logo.svg" alt="logo" /></a>
+        <button class="button button_catalog text_18">Каталог<img class="button__icon" src="images/catalog.svg" alt="catalogIcon" /></button>
+        <div class="searchBlock__input">
+          <input class="input_search text_16" type="text" name="search" id="search" placeholder="Искать товары" />
+          <button class="button button_search">
+            <img src="images/search.svg" alt="search" />
+          </button>
+        </div>
+        <ul class="searchBlock__links">
+          <li>
+            <a class="link__icon link__icon_account text_18" href="#">Войти</a>
+          </li>
+          <li>
+            <a class="link__icon link__icon_favourite text_18" href="#"
+              ><p class="counter counter_favourite text_14">7</p>
+              Избранное</a
+            >
+          </li>
+          <li>
+            <a class="link__icon link__icon_cart text_18" href="#"
+              ><p class="counter counter_cart text_14">4</p>
+              Корзина</a
+            >
+          </li>
+        </ul>
+      </div>
+      <nav class="nav nav_bottom">
+        <ul class="nav__list nav__list_bottom">
+          <li class="nav__item nav__item_grey">
+            <a class="nav__item_picture text_16" href="#"><img src="images/fire.svg" alt="" />Акции</a>
+          </li>
+          <li class="nav__item nav__item_grey">
+            <a class="nav__item_picture text_16" href="#"><img src="images/brands.svg" alt="" />Бренды</a>
+          </li>
+          <li class="nav__item nav__item_grey">
+            <a class="nav__item_picture text_16" href="#"><img src="images/premium.svg" alt="" />Premium бренды</a>
+          </li>
+          <li class="nav__item nav__item_grey">
+            <a class="nav__item_picture text_16" href="#"><img src="images/parameters.svg" alt="" />Подбор по параметрам</a>
+          </li>
+          <li class="nav__item nav__item_grey">
+            <a class="nav__item_picture text_16" href="#"><img src="images/coloredcircle.svg" alt="" />Онлайн-колеровка</a>
+          </li>
+          <li class="nav__item nav__item_grey">
+            <a class="nav__item_picture text_16" href="#"><img src="images/news.svg" alt="" />Новости компании</a>
+          </li>
+        </ul>
+        <a class="button button_phone" href="tel:+74951208155"><img src="images/phone.svg" alt="phone" />8 (495) 120-81-55</a>
+      </nav>
+    </header>
+    <main>
+      <section class="swiper slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider__wrapper">
+            <div class="slider__item slider__item_big">
+              <div class="slider__item_form slider__item_formBig">
+                <div class="saleText">
+                  <p class="slider__text_30">до</p>
+                  <img class="slider__text_minus" src="images/minus.svg" alt="" />
+                  <p class="slider__text_100">25</p>
+                  <p class="slider__text_65">%</p>
+                  <p class="slider__text_24">Скидки на выделенные товары Benjamine Moore</p>
+                </div>
+                <img class="slider__image_big" src="images/paint1.png" alt="paint" />
+              </div>
+              <a class="slider__link slider__link_arrow" href=""><img src="images/arrow-top-right.svg" alt="arrow" /></a>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item_form">
+                <div class="slider__imageContainer">
+                  <p class="slider__saleText">-25%</p>
+                  <img class="slider__image text_16" src="/images/paint2.png" alt="" />
+                </div>
+                <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
+                <div class="slider__textContainer">
+                  <p class="slider__text_16">0.95 л</p>
+                  <img src="images/dot.svg" alt="dot" />
+                  <p class="slider__text_16">2 л</p>
+                </div>
+                <div class="slider__textContainer">
+                  <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                  <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
+                </div>
+              </div>
+              <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item_form">
+                <div class="slider__imageContainer">
+                  <p class="slider__saleText text_16">-10%</p>
+                  <img class="slider__image" src="images/paint3.png" alt="" />
+                </div>
+                <p class="slider__productName text_20">Benjamin Moore Aura 532 Bath &<br />Spa Waterborne Interior Paint Matte Finish</p>
+                <div class="slider__textContainer">
+                  <p class="slider__text_16">0.95 л</p>
+                  <img src="images/dot.svg" alt="dot" />
+                  <p class="slider__text_16">2 л</p>
+                </div>
+                <div class="slider__textContainer">
+                  <p class="slider__text_24 slider__text_24_black">от 5200 ₽</p>
+                  <p class="slider__text_16 slider__text_16_deleted">5720 ₽</p>
+                </div>
+              </div>
+              <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__wrapper">
+            <div class="slider__item slider__item_big">
+              <div class="slider__item_form slider__item_formBig">
+                <div class="saleText">
+                  <p class="slider__text_30">до</p>
+                  <img class="slider__text_minus" src="images/minus.svg" alt="" />
+                  <p class="slider__text_100">25</p>
+                  <p class="slider__text_65">%</p>
+                  <p class="slider__text_24">Скидки на выделенные товары Benjamine Moore</p>
+                </div>
+                <img class="slider__image_big" src="images/paint1.png" alt="paint" />
+              </div>
+              <a class="slider__link slider__link_arrow" href=""><img src="images/arrow-top-right.svg" alt="arrow" /></a>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item_form">
+                <div class="slider__imageContainer">
+                  <p class="slider__saleText">-25%</p>
+                  <img class="slider__image text_16" src="/images/paint2.png" alt="" />
+                </div>
+                <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
+                <div class="slider__textContainer">
+                  <p class="slider__text_16">0.95 л</p>
+                  <img src="images/dot.svg" alt="dot" />
+                  <p class="slider__text_16">2 л</p>
+                </div>
+                <div class="slider__textContainer">
+                  <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                  <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
+                </div>
+              </div>
+              <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+            </div>
+            <div class="slider__item">
+              <div class="slider__item_form">
+                <div class="slider__imageContainer">
+                  <p class="slider__saleText text_16">-10%</p>
+                  <img class="slider__image" src="images/paint3.png" alt="" />
+                </div>
+                <p class="slider__productName text_20">Benjamin Moore Aura 532 Bath &<br />Spa Waterborne Interior Paint Matte Finish</p>
+                <div class="slider__textContainer">
+                  <p class="slider__text_16">0.95 л</p>
+                  <img src="images/dot.svg" alt="dot" />
+                  <p class="slider__text_16">2 л</p>
+                </div>
+                <div class="slider__textContainer">
+                  <p class="slider__text_24 slider__text_24_black">от 5200 ₽</p>
+                  <p class="slider__text_16 slider__text_16_deleted">5720 ₽</p>
+                </div>
+              </div>
+              <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+            </div>
+          </div>
+        </div>
+        <button class="slider__button slider__button_next">
+          <img src="images/arrow-right.svg" alt="" />
+        </button>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,372 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+* {
+  font-family: "Euclid Circular A", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #3b3c40;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 500;
+}
+.text_20 {
+  font-size: 20px;
+  line-height: 120%;
+}
+.text_18 {
+  font-size: 18px;
+  line-height: 130%;
+}
+.text_16 {
+  font-size: 16px;
+  line-height: 140%;
+}
+.text_14 {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+.nav__list_right {
+  gap: 30px;
+}
+.nav__list_bottom {
+  gap: 15px;
+}
+.nav_bottom {
+  margin-right: 180px;
+  margin-left: auto;
+  gap: 73px;
+}
+.nav_top {
+  margin-bottom: 14px;
+  max-width: 1920px;
+  background-color: #f4f6f8;
+  padding: 13px 180px;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+.nav__item_grey {
+  background-color: #f4f6f8;
+  border-radius: 15px;
+  padding: 13px 24px;
+}
+.nav__item_picture {
+  display: flex;
+  gap: 7px;
+}
+
+.searchBlock {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  margin-right: 180px;
+}
+.searchBlock__logo {
+  margin-right: 34px;
+}
+.searchBlock__input {
+  border: 1px solid #e50e78;
+  border-radius: 15px;
+  padding: 5px 5px 5px 25px;
+  display: flex;
+  width: 915px;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.searchBlock__input::-moz-placeholder {
+  color: #9293b0;
+  line-height: 50px;
+}
+.searchBlock__input::placeholder {
+  color: #9293b0;
+  line-height: 50px;
+}
+.searchBlock__links {
+  display: flex;
+  gap: 30px;
+}
+
+.button {
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.button_catalog {
+  background-color: #e50e78;
+  color: white;
+  padding: 5px 5px 5px 20px;
+  gap: 13px;
+  margin-right: 25px;
+}
+.button_search {
+  border-radius: 10px;
+  background-color: #e50e78;
+  padding: 13px;
+}
+.button__icon {
+  background-color: white;
+  border-radius: 10px;
+  padding: 13px;
+}
+.button_phone {
+  background-color: #e50e78;
+  padding: 13px 24px;
+  color: white;
+  gap: 10px;
+}
+
+.input_search {
+  border: none;
+  outline: none;
+}
+
+.link__icon {
+  height: 52px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+}
+.link__icon_account {
+  background-image: url(../images/account.svg);
+}
+.link__icon_favourite {
+  background-image: url(../images/heart.svg);
+}
+.link__icon_cart {
+  background-image: url(../images/cart.svg);
+}
+
+.counter {
+  border-radius: 100%;
+  background-color: #e50e78;
+  color: white;
+  position: absolute;
+  top: 1.5px;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter_favourite {
+  left: 54.5px;
+}
+.counter_cart {
+  left: 43.5px;
+}
+
+.slider {
+  background-color: #f3efff;
+  padding: 40px !important;
+  border-radius: 50px;
+  max-width: 1560px;
+  margin: 80px auto;
+  position: relative !important;
+  box-sizing: border-box !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+.slider__wrapper {
+  display: flex !important;
+  gap: 20px;
+}
+.slider__item {
+  position: relative;
+  width: 375px;
+  height: 422px;
+}
+.slider__item_form {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 25px;
+  -webkit-clip-path: polygon(100% 7.109%, 100% 7.109%, 99.895% 5.956%, 99.592% 4.862%, 99.107% 3.842%, 98.456% 2.911%, 97.657% 2.082%, 96.725% 1.372%, 95.677% 0.793%, 94.529% 0.362%, 93.298% 0.093%, 92% 0%, 8% 0%, 8% 0%, 6.702% 0.093%, 5.471% 0.362%, 4.324% 0.793%, 3.275% 1.372%, 2.343% 2.082%, 1.544% 2.911%, 0.893% 3.842%, 0.408% 4.862%, 0.105% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.105% 94.044%, 0.408% 95.138%, 0.893% 96.158%, 1.544% 97.09%, 2.343% 97.918%, 3.275% 98.628%, 4.324% 99.207%, 5.471% 99.638%, 6.702% 99.907%, 8% 100%, 73.333% 100%, 73.333% 100%, 74.631% 99.907%, 75.862% 99.638%, 77.01% 99.207%, 78.058% 98.628%, 78.99% 97.918%, 79.79% 97.09%, 80.44% 96.158%, 80.925% 95.138%, 81.229% 94.044%, 81.333% 92.891%, 81.333% 90.521%, 81.333% 90.521%, 81.438% 89.368%, 81.741% 88.274%, 82.226% 87.254%, 82.877% 86.323%, 83.676% 85.494%, 84.609% 84.784%, 85.657% 84.206%, 86.805% 83.775%, 88.036% 83.505%, 89.333% 83.412%, 92% 83.412%, 92% 83.412%, 93.298% 83.319%, 94.529% 83.05%, 95.677% 82.619%, 96.725% 82.041%, 97.657% 81.33%, 98.456% 80.502%, 99.107% 79.57%, 99.592% 78.55%, 99.895% 77.456%, 100% 76.303%, 100% 7.109%);
+          clip-path: polygon(100% 7.109%, 100% 7.109%, 99.895% 5.956%, 99.592% 4.862%, 99.107% 3.842%, 98.456% 2.911%, 97.657% 2.082%, 96.725% 1.372%, 95.677% 0.793%, 94.529% 0.362%, 93.298% 0.093%, 92% 0%, 8% 0%, 8% 0%, 6.702% 0.093%, 5.471% 0.362%, 4.324% 0.793%, 3.275% 1.372%, 2.343% 2.082%, 1.544% 2.911%, 0.893% 3.842%, 0.408% 4.862%, 0.105% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.105% 94.044%, 0.408% 95.138%, 0.893% 96.158%, 1.544% 97.09%, 2.343% 97.918%, 3.275% 98.628%, 4.324% 99.207%, 5.471% 99.638%, 6.702% 99.907%, 8% 100%, 73.333% 100%, 73.333% 100%, 74.631% 99.907%, 75.862% 99.638%, 77.01% 99.207%, 78.058% 98.628%, 78.99% 97.918%, 79.79% 97.09%, 80.44% 96.158%, 80.925% 95.138%, 81.229% 94.044%, 81.333% 92.891%, 81.333% 90.521%, 81.333% 90.521%, 81.438% 89.368%, 81.741% 88.274%, 82.226% 87.254%, 82.877% 86.323%, 83.676% 85.494%, 84.609% 84.784%, 85.657% 84.206%, 86.805% 83.775%, 88.036% 83.505%, 89.333% 83.412%, 92% 83.412%, 92% 83.412%, 93.298% 83.319%, 94.529% 83.05%, 95.677% 82.619%, 96.725% 82.041%, 97.657% 81.33%, 98.456% 80.502%, 99.107% 79.57%, 99.592% 78.55%, 99.895% 77.456%, 100% 76.303%, 100% 7.109%);
+}
+.slider__item_formBig {
+  background: url(../images/radialgradient.svg) no-repeat 174.5px, linear-gradient(145deg, #7d68fb 33.75%, #afa2fb 80.01%);
+  padding-left: 50px;
+  padding-top: 43px;
+  -webkit-clip-path: polygon(100% 7.109%, 100% 7.109%, 99.943% 5.956%, 99.778% 4.862%, 99.515% 3.842%, 99.161% 2.911%, 98.727% 2.082%, 98.22% 1.372%, 97.65% 0.793%, 97.026% 0.362%, 96.357% 0.093%, 95.652% 0%, 4.348% 0%, 4.348% 0%, 3.643% 0.093%, 2.974% 0.362%, 2.35% 0.793%, 1.78% 1.372%, 1.273% 2.082%, 0.839% 2.911%, 0.485% 3.842%, 0.222% 4.862%, 0.057% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.057% 94.044%, 0.222% 95.138%, 0.485% 96.158%, 0.839% 97.09%, 1.273% 97.918%, 1.78% 98.628%, 2.35% 99.207%, 2.974% 99.638%, 3.643% 99.907%, 4.348% 100%, 85.507% 100%, 85.507% 100%, 86.213% 99.907%, 86.882% 99.638%, 87.505% 99.207%, 88.075% 98.628%, 88.582% 97.918%, 89.016% 97.09%, 89.37% 96.158%, 89.633% 95.138%, 89.798% 94.044%, 89.855% 92.891%, 89.855% 90.521%, 89.855% 90.521%, 89.912% 89.368%, 90.077% 88.274%, 90.34% 87.254%, 90.694% 86.323%, 91.128% 85.494%, 91.635% 84.784%, 92.205% 84.206%, 92.829% 83.775%, 93.498% 83.505%, 94.203% 83.412%, 95.652% 83.412%, 95.652% 83.412%, 96.357% 83.319%, 97.026% 83.05%, 97.65% 82.619%, 98.22% 82.041%, 98.727% 81.33%, 99.161% 80.502%, 99.515% 79.57%, 99.778% 78.55%, 99.943% 77.456%, 100% 76.303%, 100% 7.109%);
+          clip-path: polygon(100% 7.109%, 100% 7.109%, 99.943% 5.956%, 99.778% 4.862%, 99.515% 3.842%, 99.161% 2.911%, 98.727% 2.082%, 98.22% 1.372%, 97.65% 0.793%, 97.026% 0.362%, 96.357% 0.093%, 95.652% 0%, 4.348% 0%, 4.348% 0%, 3.643% 0.093%, 2.974% 0.362%, 2.35% 0.793%, 1.78% 1.372%, 1.273% 2.082%, 0.839% 2.911%, 0.485% 3.842%, 0.222% 4.862%, 0.057% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.057% 94.044%, 0.222% 95.138%, 0.485% 96.158%, 0.839% 97.09%, 1.273% 97.918%, 1.78% 98.628%, 2.35% 99.207%, 2.974% 99.638%, 3.643% 99.907%, 4.348% 100%, 85.507% 100%, 85.507% 100%, 86.213% 99.907%, 86.882% 99.638%, 87.505% 99.207%, 88.075% 98.628%, 88.582% 97.918%, 89.016% 97.09%, 89.37% 96.158%, 89.633% 95.138%, 89.798% 94.044%, 89.855% 92.891%, 89.855% 90.521%, 89.855% 90.521%, 89.912% 89.368%, 90.077% 88.274%, 90.34% 87.254%, 90.694% 86.323%, 91.128% 85.494%, 91.635% 84.784%, 92.205% 84.206%, 92.829% 83.775%, 93.498% 83.505%, 94.203% 83.412%, 95.652% 83.412%, 95.652% 83.412%, 96.357% 83.319%, 97.026% 83.05%, 97.65% 82.619%, 98.22% 82.041%, 98.727% 81.33%, 99.161% 80.502%, 99.515% 79.57%, 99.778% 78.55%, 99.943% 77.456%, 100% 76.303%, 100% 7.109%);
+}
+.slider__item_big {
+  width: 690px;
+}
+.slider__link {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__link_arrow {
+  background-color: #3b3c40;
+}
+.slider__link_cart {
+  background-color: #e50e78;
+}
+.slider__text_minus {
+  margin-right: 17px;
+  margin-top: 55px;
+  height: 10px;
+  width: 45px;
+}
+.slider__textContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  align-items: flex-end;
+}
+.slider__text_16 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  color: #9293b0;
+  position: relative;
+}
+.slider__text_16_deleted::before {
+  content: "";
+  border-bottom: 1px solid #9293b0;
+  position: absolute;
+  top: -2px;
+  width: 92%;
+  height: 50%;
+  transform: rotate(-3deg);
+}
+.slider__text_24 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+.slider__text_24_black {
+  color: #3b3c40;
+}
+.slider__text_30 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+.slider__text_65 {
+  font-size: 65px;
+  font-weight: 700;
+  color: white;
+  line-height: 65px;
+  margin-top: 5px;
+  height: 100px;
+}
+.slider__text_100 {
+  font-size: 100px;
+  line-height: 100px;
+  height: 100px;
+  font-weight: 700;
+  color: white;
+}
+.slider__image {
+  width: 105px;
+}
+.slider__imageContainer {
+  padding: 58px 111px 32px 109px;
+  border: 2px solid #f4f6f8;
+  border-radius: 30px;
+  position: relative;
+}
+.slider__image_big {
+  width: 233px;
+  position: absolute;
+  top: 70px;
+  right: 47px;
+}
+.slider__saleText {
+  color: white;
+  padding: 6px 14px;
+  background-color: #e50e78;
+  border-radius: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.slider__productName {
+  width: 321px;
+  height: 52px;
+  margin-top: 20px;
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.slider__button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 221px;
+  right: 20px;
+  z-index: 2;
+  filter: drop-shadow(3px 6px 14px rgba(115, 103, 151, 0.15));
+}
+
+.saleText {
+  position: relative;
+  padding-top: 99px;
+  height: 340px;
+  width: 302px;
+  flex-wrap: wrap;
+  display: flex;
+  background-image: url(../images/B.svg);
+  background-position-x: 162px;
+  background-repeat: repeat-y;
+  align-content: flex-start;
+}/*# sourceMappingURL=style.css.map */

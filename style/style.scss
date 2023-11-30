@@ -1,0 +1,427 @@
+$black: #3b3c40;
+$grey: #f4f6f8;
+$darkGrey: #9293b0;
+$purpleLight: #f3efff;
+$pink: #e50e78;
+$line: #dfdff0;
+$purleGradient: linear-gradient(145deg, #7d68fb 33.75%, #afa2fb 80.01%);
+$buttonGradient: linear-gradient(96deg, #dd3197 0%, #822faf 101.4%);
+
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+
+* {
+  font-family: "Euclid Circular A", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 500;
+
+  &_20 {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  &_18 {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  &_16 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &_14 {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
+
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 40px;
+
+    &_right {
+      gap: 30px;
+    }
+
+    &_bottom {
+      gap: 15px;
+    }
+  }
+
+  &_bottom {
+    margin-right: 180px;
+    margin-left: auto;
+    gap: 73px;
+  }
+
+  &_top {
+    margin-bottom: 14px;
+    max-width: 1920px;
+    background-color: $grey;
+    padding: 13px 180px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &_grey {
+      background-color: $grey;
+      border-radius: 15px;
+      padding: 13px 24px;
+    }
+
+    &_picture {
+      display: flex;
+      gap: 7px;
+    }
+  }
+}
+
+.searchBlock {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  margin-right: 180px;
+
+  &__logo {
+    margin-right: 34px;
+  }
+
+  &__input {
+    border: 1px solid $pink;
+    border-radius: 15px;
+    padding: 5px 5px 5px 25px;
+    display: flex;
+    width: 915px;
+    justify-content: space-between;
+    margin-right: 40px;
+
+    &::placeholder {
+      color: $darkGrey;
+      line-height: 50px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.button {
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+
+  &_catalog {
+    background-color: $pink;
+    color: white;
+    padding: 5px 5px 5px 20px;
+    gap: 13px;
+    margin-right: 25px;
+  }
+
+  &_search {
+    border-radius: 10px;
+    background-color: $pink;
+    padding: 13px;
+  }
+
+  &__icon {
+    background-color: white;
+    border-radius: 10px;
+    padding: 13px;
+  }
+
+  &_phone {
+    background-color: $pink;
+    padding: 13px 24px;
+    color: white;
+    gap: 10px;
+  }
+}
+
+.input {
+  &_search {
+    border: none;
+    outline: none;
+  }
+}
+
+.link__icon {
+  height: 52px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+
+  &_account {
+    background-image: url(../images/account.svg);
+  }
+
+  &_favourite {
+    background-image: url(../images/heart.svg);
+  }
+
+  &_cart {
+    background-image: url(../images/cart.svg);
+  }
+}
+
+.counter {
+  border-radius: 100%;
+  background-color: $pink;
+  color: white;
+  position: absolute;
+  top: 1.5px;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_favourite {
+    left: 54.5px;
+  }
+
+  &_cart {
+    left: 43.5px;
+  }
+}
+
+.slider {
+  background-color: $purpleLight;
+  padding: 40px !important;
+  border-radius: 50px;
+  max-width: 1560px;
+  margin: 80px auto;
+  position: relative !important;
+  box-sizing: border-box !important;
+  height: fit-content !important;
+
+  &__wrapper {
+    display: flex !important;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    width: 375px;
+    height: 422px;
+
+    &_form {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      padding: 25px;
+      clip-path: polygon(100% 7.109%, 100% 7.109%, 99.895% 5.956%, 99.592% 4.862%, 99.107% 3.842%, 98.456% 2.911%, 97.657% 2.082%, 96.725% 1.372%, 95.677% 0.793%, 94.529% 0.362%, 93.298% 0.093%, 92% 0%, 8% 0%, 8% 0%, 6.702% 0.093%, 5.471% 0.362%, 4.324% 0.793%, 3.275% 1.372%, 2.343% 2.082%, 1.544% 2.911%, 0.893% 3.842%, 0.408% 4.862%, 0.105% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.105% 94.044%, 0.408% 95.138%, 0.893% 96.158%, 1.544% 97.09%, 2.343% 97.918%, 3.275% 98.628%, 4.324% 99.207%, 5.471% 99.638%, 6.702% 99.907%, 8% 100%, 73.333% 100%, 73.333% 100%, 74.631% 99.907%, 75.862% 99.638%, 77.01% 99.207%, 78.058% 98.628%, 78.99% 97.918%, 79.79% 97.09%, 80.44% 96.158%, 80.925% 95.138%, 81.229% 94.044%, 81.333% 92.891%, 81.333% 90.521%, 81.333% 90.521%, 81.438% 89.368%, 81.741% 88.274%, 82.226% 87.254%, 82.877% 86.323%, 83.676% 85.494%, 84.609% 84.784%, 85.657% 84.206%, 86.805% 83.775%, 88.036% 83.505%, 89.333% 83.412%, 92% 83.412%, 92% 83.412%, 93.298% 83.319%, 94.529% 83.05%, 95.677% 82.619%, 96.725% 82.041%, 97.657% 81.33%, 98.456% 80.502%, 99.107% 79.57%, 99.592% 78.55%, 99.895% 77.456%, 100% 76.303%, 100% 7.109%);
+    }
+
+    &_formBig {
+      background: url(../images/radialgradient.svg) no-repeat 174.5px, $purleGradient;
+      padding-left: 50px;
+      padding-top: 43px;
+      clip-path: polygon(100% 7.109%, 100% 7.109%, 99.943% 5.956%, 99.778% 4.862%, 99.515% 3.842%, 99.161% 2.911%, 98.727% 2.082%, 98.22% 1.372%, 97.65% 0.793%, 97.026% 0.362%, 96.357% 0.093%, 95.652% 0%, 4.348% 0%, 4.348% 0%, 3.643% 0.093%, 2.974% 0.362%, 2.35% 0.793%, 1.78% 1.372%, 1.273% 2.082%, 0.839% 2.911%, 0.485% 3.842%, 0.222% 4.862%, 0.057% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.057% 94.044%, 0.222% 95.138%, 0.485% 96.158%, 0.839% 97.09%, 1.273% 97.918%, 1.78% 98.628%, 2.35% 99.207%, 2.974% 99.638%, 3.643% 99.907%, 4.348% 100%, 85.507% 100%, 85.507% 100%, 86.213% 99.907%, 86.882% 99.638%, 87.505% 99.207%, 88.075% 98.628%, 88.582% 97.918%, 89.016% 97.09%, 89.37% 96.158%, 89.633% 95.138%, 89.798% 94.044%, 89.855% 92.891%, 89.855% 90.521%, 89.855% 90.521%, 89.912% 89.368%, 90.077% 88.274%, 90.34% 87.254%, 90.694% 86.323%, 91.128% 85.494%, 91.635% 84.784%, 92.205% 84.206%, 92.829% 83.775%, 93.498% 83.505%, 94.203% 83.412%, 95.652% 83.412%, 95.652% 83.412%, 96.357% 83.319%, 97.026% 83.05%, 97.65% 82.619%, 98.22% 82.041%, 98.727% 81.33%, 99.161% 80.502%, 99.515% 79.57%, 99.778% 78.55%, 99.943% 77.456%, 100% 76.303%, 100% 7.109%);
+    }
+
+    &_big {
+      width: 690px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_arrow {
+      background-color: $black;
+    }
+
+    &_cart {
+      background-color: $pink;
+    }
+  }
+
+  &__text {
+    &_minus {
+      margin-right: 17px;
+      margin-top: 55px;
+      height: 10px;
+      width: 45px;
+    }
+
+    &Container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+      align-items: flex-end;
+    }
+
+    &_16 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      color: $darkGrey;
+      position: relative;
+
+      &_deleted {
+        &::before {
+          content: "";
+          border-bottom: 1px solid $darkGrey;
+          position: absolute;
+          top: -2px;
+          width: 92%;
+          height: 50%;
+          transform: rotate(-3deg);
+        }
+      }
+    }
+
+    &_24 {
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+
+      &_black {
+        color: $black;
+      }
+    }
+
+    &_30 {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+      position: absolute;
+      left: 0;
+      top: 100px;
+    }
+
+    &_65 {
+      font-size: 65px;
+      font-weight: 700;
+      color: white;
+      line-height: 65px;
+      margin-top: 5px;
+      height: 100px;
+    }
+
+    &_100 {
+      font-size: 100px;
+      line-height: 100px;
+      height: 100px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  &__image {
+    width: 105px;
+
+    &Container {
+      padding: 58px 111px 32px 109px;
+      border: 2px solid $grey;
+      border-radius: 30px;
+      position: relative;
+    }
+
+    &_big {
+      width: 233px;
+      position: absolute;
+      top: 70px;
+      right: 47px;
+    }
+  }
+
+  &__saleText {
+    color: white;
+    padding: 6px 14px;
+    background-color: $pink;
+    border-radius: 15px;
+    width: fit-content;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  &__productName {
+    width: 321px;
+    height: 52px;
+    margin-top: 20px;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 221px;
+    right: 20px;
+    z-index: 2;
+    filter: drop-shadow(3px 6px 14px rgba(115, 103, 151, 0.15));
+  }
+}
+
+.saleText {
+  position: relative;
+  padding-top: 99px;
+  height: 340px;
+  width: 302px;
+  flex-wrap: wrap;
+  display: flex;
+  background-image: url(../images/B.svg);
+  background-position-x: 162px;
+  background-repeat: repeat-y;
+  align-content: flex-start;
+}
