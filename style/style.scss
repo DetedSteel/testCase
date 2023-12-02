@@ -6,6 +6,7 @@ $pink: #e50e78;
 $line: #dfdff0;
 $purleGradient: linear-gradient(145deg, #7d68fb 33.75%, #afa2fb 80.01%);
 $buttonGradient: linear-gradient(96deg, #dd3197 0%, #822faf 101.4%);
+$buttonGradientHover: linear-gradient(96deg, #FA67BF 0%, #BE63EF 101.4%);
 
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 
@@ -120,10 +121,7 @@ button {
   }
 
   &__input {
-    border: 1px solid $pink;
-    border-radius: 15px;
     padding: 5px 5px 5px 25px;
-    display: flex;
     width: 915px;
     justify-content: space-between;
     margin-right: 40px;
@@ -177,9 +175,27 @@ button {
 }
 
 .input {
-  &_search {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
+
+  &__container {
+    border: 1px solid $pink;
+    border-radius: 15px;
+    display: flex;
+
+    &_form {
+      padding: 18px 25px;
+      margin-bottom: 30px;
+
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &_form {
+    background-color: transparent;
+    margin-left: 6px;
   }
 }
 
@@ -254,7 +270,7 @@ button {
     }
 
     &_formBig {
-      background: url(../images/radialgradient.svg) no-repeat 174.5px, $purleGradient;
+      background: url(../images/radialgradient.svg) no-repeat 175px, $purleGradient;
       padding-left: 50px;
       padding-top: 43px;
       clip-path: polygon(100% 7.109%, 100% 7.109%, 99.943% 5.956%, 99.778% 4.862%, 99.515% 3.842%, 99.161% 2.911%, 98.727% 2.082%, 98.22% 1.372%, 97.65% 0.793%, 97.026% 0.362%, 96.357% 0.093%, 95.652% 0%, 4.348% 0%, 4.348% 0%, 3.643% 0.093%, 2.974% 0.362%, 2.35% 0.793%, 1.78% 1.372%, 1.273% 2.082%, 0.839% 2.911%, 0.485% 3.842%, 0.222% 4.862%, 0.057% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.057% 94.044%, 0.222% 95.138%, 0.485% 96.158%, 0.839% 97.09%, 1.273% 97.918%, 1.78% 98.628%, 2.35% 99.207%, 2.974% 99.638%, 3.643% 99.907%, 4.348% 100%, 85.507% 100%, 85.507% 100%, 86.213% 99.907%, 86.882% 99.638%, 87.505% 99.207%, 88.075% 98.628%, 88.582% 97.918%, 89.016% 97.09%, 89.37% 96.158%, 89.633% 95.138%, 89.798% 94.044%, 89.855% 92.891%, 89.855% 90.521%, 89.855% 90.521%, 89.912% 89.368%, 90.077% 88.274%, 90.34% 87.254%, 90.694% 86.323%, 91.128% 85.494%, 91.635% 84.784%, 92.205% 84.206%, 92.829% 83.775%, 93.498% 83.505%, 94.203% 83.412%, 95.652% 83.412%, 95.652% 83.412%, 96.357% 83.319%, 97.026% 83.05%, 97.65% 82.619%, 98.22% 82.041%, 98.727% 81.33%, 99.161% 80.502%, 99.515% 79.57%, 99.778% 78.55%, 99.943% 77.456%, 100% 76.303%, 100% 7.109%);
@@ -376,7 +392,7 @@ button {
     }
   }
 
-  &__saleText {
+  &__spetialText {
     color: white;
     padding: 6px 14px;
     background-color: $pink;
@@ -406,10 +422,23 @@ button {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 221px;
-    right: 20px;
     z-index: 2;
     filter: drop-shadow(3px 6px 14px rgba(115, 103, 151, 0.15));
+
+    &_popular {
+      bottom: 183px;
+      right: 0;
+    }
+
+    &_header {
+      top: 221px;
+      right: 20px;
+    }
+
+    &_sales {
+      right: 0;
+      top: 191px;
+    }
   }
 }
 
@@ -424,4 +453,330 @@ button {
   background-position-x: 162px;
   background-repeat: repeat-y;
   align-content: flex-start;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.serviceCard {
+  padding: 40px 30px;
+  border-radius: 20px;
+  background-color: $purpleLight;
+  background-image: url(../images/cardBackground.svg);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: -55px;
+  display: grid;
+  max-width: 507px;
+  column-gap: 80px;
+  row-gap: 12px;
+
+  &__img {
+    grid-row: 1/3;
+    align-self: center;
+  }
+
+  &__header {
+    grid-row: 1;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__text {
+    grid-row: 2;
+    color: $darkGrey;
+  }
+}
+
+.popular {
+  position: relative;
+
+  &__categories {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+}
+
+.mainSection {
+  max-width: 1560px;
+  margin: 0 auto;
+  margin-bottom: 152px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    &_text {
+      font-size: 50px;
+    }
+  }
+}
+
+.gradientButton {
+  padding: 5px 5px 5px 30px;
+  color: white;
+  background: $buttonGradient;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: all 3s ease-in-out;
+
+  &:hover {
+    background: $buttonGradientHover;
+    font-size: 20px;
+  }
+
+  &__img {
+    padding: 13px;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
+
+.categories__gradient {
+  width: 41px;
+  height: 50px;
+  background: linear-gradient(90deg, #fff 36.76%, rgba(255, 255, 255, 0) 99.93%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.categorie__name {
+  padding: 13px 24px;
+  background-color: $grey;
+  border-radius: 15px;
+  white-space: nowrap;
+
+  &_active {
+    background-color: $pink;
+    color: white;
+  }
+
+  &_image {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.subCategories {
+  display: flex;
+  gap: 20px;
+}
+
+.subCategorie {
+  position: relative;
+
+  &__picture {
+    pointer-events: none;
+  }
+
+  &__button {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 12px 20px;
+    width: calc(100% - 30px);
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgba(244, 246, 248, 0.5);
+    backdrop-filter: blur(6px);
+  }
+
+  &__text {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: flex-start;
+  }
+
+  &__count {
+    grid-row: 2;
+    grid-column: 1;
+    opacity: 0.6;
+    justify-self: flex-start;
+  }
+
+  &__icon {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+}
+
+.sales {
+  &__items {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    filter: drop-shadow(5px 15px 50px rgba(173, 178, 201, 0.45));
+  }
+}
+
+.form {
+  &__container {
+    background-color: $purpleLight;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 62px 125px;
+    height: 497px;
+    position: relative;
+  }
+
+  &__header {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $darkGrey;
+    margin-bottom: 40px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  &__submit {
+    &Text {
+      color: $darkGrey;
+      max-width: 267px;
+    }
+
+    &Link {
+      text-decoration: underline;
+    }
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer {
+  max-width: 1560px;
+  background-color: $grey;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  padding: 60px 60px 25px 60px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #D9D9D9;
+  }
+
+  &__text {
+    color: $darkGrey;
+  }
+
+  &__header {
+    margin-bottom: 15px;
+
+    &_about {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__contacts {
+    display: grid;
+    column-gap: 50px;
+    height: fit-content;
+  }
+
+  &__logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__rating {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &__button {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  &__social {
+    margin-bottom: 58px;
+    display: flex;
+    gap: 15px;
+    height: 30px;
+  }
+
+  &__paymentInfo {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__button {
+    border-radius: 15px;
+    border: 1px solid $darkGrey;
+    background-color: transparent;
+    padding: 13px 23.5px;
+    height: fit-content;
+  }
+
+  &__rating {
+    display: flex;
+    gap: 16px;
+    height: 24px;
+    margin-bottom: 30px;
+  }
+
+  &__copyright {
+    color: $darkGrey;
+    margin-top: 25px;
+  }
+}
+
+.catalog {
+  &__items {
+    display: flex;
+    max-width: 610px;
+    gap: 30px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &_1 {
+      max-width: 271px;
+    }
+  }
+}
+
+.contacts__links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }

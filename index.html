@@ -48,8 +48,8 @@
       <div class="searchBlock">
         <a href="#" class="searchBlock__logo"><img src="images/logo.svg" alt="logo" /></a>
         <button class="button button_catalog text_18">Каталог<img class="button__icon" src="images/catalog.svg" alt="catalogIcon" /></button>
-        <div class="searchBlock__input">
-          <input class="input_search text_16" type="text" name="search" id="search" placeholder="Искать товары" />
+        <div class="searchBlock__input input__container">
+          <input class="input text_16" type="text" name="search" id="search" placeholder="Искать товары" />
           <button class="button button_search">
             <img src="images/search.svg" alt="search" />
           </button>
@@ -59,16 +59,10 @@
             <a class="link__icon link__icon_account text_18" href="#">Войти</a>
           </li>
           <li>
-            <a class="link__icon link__icon_favourite text_18" href="#"
-              ><p class="counter counter_favourite text_14">7</p>
-              Избранное</a
-            >
+            <a class="link__icon link__icon_favourite text_18" href="#"><p class="counter counter_favourite text_14">7</p>Избранное</a>
           </li>
           <li>
-            <a class="link__icon link__icon_cart text_18" href="#"
-              ><p class="counter counter_cart text_14">4</p>
-              Корзина</a
-            >
+            <a class="link__icon link__icon_cart text_18" href="#"><p class="counter counter_cart text_14">4</p>Корзина</a>
           </li>
         </ul>
       </div>
@@ -95,8 +89,6 @@
         </ul>
         <a class="button button_phone" href="tel:+74951208155"><img src="images/phone.svg" alt="phone" />8 (495) 120-81-55</a>
       </nav>
-    </header>
-    <main>
       <section class="swiper slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide slider__wrapper">
@@ -116,8 +108,8 @@
             <div class="slider__item">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__saleText">-25%</p>
-                  <img class="slider__image text_16" src="/images/paint2.png" alt="" />
+                  <p class="slider__spetialText">-25%</p>
+                  <img class="slider__image text_16" src="images/paint2.png" alt="" />
                 </div>
                 <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
                 <div class="slider__textContainer">
@@ -135,7 +127,7 @@
             <div class="slider__item">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__saleText text_16">-10%</p>
+                  <p class="slider__spetialText text_16">-10%</p>
                   <img class="slider__image" src="images/paint3.png" alt="" />
                 </div>
                 <p class="slider__productName text_20">Benjamin Moore Aura 532 Bath &<br />Spa Waterborne Interior Paint Matte Finish</p>
@@ -169,8 +161,8 @@
             <div class="slider__item">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__saleText">-25%</p>
-                  <img class="slider__image text_16" src="/images/paint2.png" alt="" />
+                  <p class="slider__spetialText">-25%</p>
+                  <img class="slider__image text_16" src="images/paint2.png" alt="" />
                 </div>
                 <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
                 <div class="slider__textContainer">
@@ -188,7 +180,7 @@
             <div class="slider__item">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__saleText text_16">-10%</p>
+                  <p class="slider__spetialText text_16">-10%</p>
                   <img class="slider__image" src="images/paint3.png" alt="" />
                 </div>
                 <p class="slider__productName text_20">Benjamin Moore Aura 532 Bath &<br />Spa Waterborne Interior Paint Matte Finish</p>
@@ -206,12 +198,260 @@
             </div>
           </div>
         </div>
-        <button class="slider__button slider__button_next">
+        <button class="slider__button slider__button_header slider__button_next">
           <img src="images/arrow-right.svg" alt="" />
         </button>
       </section>
+    </header>
+    <main>
+      <section class="services mainSection">
+        <div class="serviceCard">
+          <img class="serviceCard__img" src="images/card1pic.png" alt="" />
+          <p class="serviceCard__header">Профессиональный подбор цвета</p>
+          <p class="serviceCard__text text_16">Отвечаем на вопросы покупателей в течение 10 минут</p>
+        </div>
+        <div class="serviceCard">
+          <img class="serviceCard__img" src="images/card2pic.png" alt="" />
+          <p class="serviceCard__header">Широкий выбор красок</p>
+          <p class="serviceCard__text text_16">Дарим подарки и скидки до 70% всем покупателям</p>
+        </div>
+        <div class="serviceCard">
+          <img class="serviceCard__img" src="images/card3pic.png" alt="" />
+          <p class="serviceCard__header">Гарантия качества продукции</p>
+          <p class="serviceCard__text text_16">Соответствуем требованиям и стандартам качества</p>
+        </div>
+      </section>
+      <section class="popular mainSection">
+        <div class="mainSection__header">
+          <p class="mainSection__header_text">Популярные категории</p>
+          <button class="gradientButton text_18">Все категории<img class="gradientButton__img" src="images/arrow-right-purple.svg" alt="arrow" /></button>
+        </div>
+        <div class="popular">
+          <div class="popular__categories">
+            <a href="#" class="categorie__name categorie__name_image"><img src="images/fire.svg" alt="" />Акции</a>
+            <a href="#" class="categorie__name categorie__name_active">Для внутренних работ</a>
+            <a href="#" class="categorie__name">Для наружных работ</a>
+            <a href="#" class="categorie__name">Универсальные</a>
+            <a href="#" class="categorie__name">Специального назначения</a>
+            <a href="#" class="categorie__name">Грунтовки</a>
+            <a href="#" class="categorie__name">Специального назначения</a>
+            <a href="#" class="categorie__name">Специального назначения</a>
+            <div class="categories__gradient"></div>
+          </div>
+          <div class="subCategories">
+            <div class="subCategorie">
+              <img class="subCategorie__picture" src="images/wallPaint.jpg" alt="wall" />
+              <button class="subCategorie__button">
+                <p class="text_20 subCategorie__text">Краски для стен</p>
+                <p class="text_16 subCategorie__count">500+ товаров</p>
+                <img class="subCategorie__icon" src="images/arrow-right-black.svg" alt="arrow">
+              </button>
+            </div>
+            <div class="subCategorie">
+              <img class="subCategorie__picture" src="images/roofPaint.jpg" alt="roof" />
+              <button class="subCategorie__button">
+                <p class="text_20 subCategorie__text">Краски для потолка</p>
+                <p class="text_16 subCategorie__count">500+ товаров</p>
+                <img class="subCategorie__icon" src="images/arrow-right-black.svg" alt="arrow">
+              </button>
+            </div>
+            <div class="subCategorie">
+              <img class="subCategorie__picture" src="images/kitchPaint.jpg" alt="kitchen" />
+              <button class="subCategorie__button">
+                <p class="text_20 subCategorie__text">Краски для кухни и ванной</p>
+                <p class="text_16 subCategorie__count">500+ товаров</p>
+                <img class="subCategorie__icon" src="images/arrow-right-black.svg" alt="arrow">
+              </button>
+            </div>
+            <div class="subCategorie">
+              <img class="subCategorie__picture" src="images/floorPaint.jpg" alt="floor" />
+              <button class="subCategorie__button">
+                <p class="text_20 subCategorie__text">Краски для пола</p>
+                <p class="text_16 subCategorie__count">500+ товаров</p>
+                <img class="subCategorie__icon" src="images/arrow-right-black.svg" alt="arrow">
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="slider__button slider__button_popular">
+          <img src="images/arrow-right.svg" alt="arrow" />
+        </button>
+      </section>
+      <section class="sales mainSection">
+        <div class="mainSection__header">
+          <p class="mainSection__header_text">Скидки</p>
+          <button class="gradientButton text_18">Все скидки<img class="gradientButton__img" src="images/arrow-right-purple.svg" alt="arrow" /></button>
+        </div>
+        <div class="sales__items">
+          <div class="slider__item">
+            <div class="slider__item_form">
+              <div class="slider__imageContainer">
+                <p class="slider__spetialText">новинка</p>
+                <img class="slider__image text_16" src="images/paint2.png" alt="" />
+              </div>
+              <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
+              <div class="slider__textContainer">
+                <p class="slider__text_16">0.95 л</p>
+                <img src="images/dot.svg" alt="dot" />
+                <p class="slider__text_16">2 л</p>
+              </div>
+              <div class="slider__textContainer">
+                <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
+              </div>
+            </div>
+            <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item_form">
+              <div class="slider__imageContainer">
+                <p class="slider__spetialText">новинка</p>
+                <img class="slider__image text_16" src="images/paint2.png" alt="" />
+              </div>
+              <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
+              <div class="slider__textContainer">
+                <p class="slider__text_16">0.95 л</p>
+                <img src="images/dot.svg" alt="dot" />
+                <p class="slider__text_16">2 л</p>
+              </div>
+              <div class="slider__textContainer">
+                <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
+              </div>
+            </div>
+            <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item_form">
+              <div class="slider__imageContainer">
+                <p class="slider__spetialText">новинка</p>
+                <img class="slider__image text_16" src="images/paint2.png" alt="" />
+              </div>
+              <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
+              <div class="slider__textContainer">
+                <p class="slider__text_16">0.95 л</p>
+                <img src="images/dot.svg" alt="dot" />
+                <p class="slider__text_16">2 л</p>
+              </div>
+              <div class="slider__textContainer">
+                <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
+              </div>
+            </div>
+            <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item_form">
+              <div class="slider__imageContainer">
+                <p class="slider__spetialText">новинка</p>
+                <img class="slider__image text_16" src="images/paint2.png" alt="" />
+              </div>
+              <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
+              <div class="slider__textContainer">
+                <p class="slider__text_16">0.95 л</p>
+                <img src="images/dot.svg" alt="dot" />
+                <p class="slider__text_16">2 л</p>
+              </div>
+              <div class="slider__textContainer">
+                <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
+              </div>
+            </div>
+            <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
+          </div>
+          <button class="slider__button slider__button_sales">
+            <img src="images/arrow-right.svg" alt="arrow" />
+          </button>
+        </div>
+      </section>
+      <section class="form__container mainSection">
+        <img  class="form__image" src="images/formIng.jpg" alt="paints">
+        <div>
+          <p class="form__header">Нужна консультация?</p>
+          <p class="form__text text_16">Оставьте свои данные, и мы перезвоним вам в ближайшее время</p>
+          <form action="">
+            <div class="input__container input__container_form">
+              <img src="images/account.svg" alt="">
+              <input required="true" class="input input_form" type="text" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="input__container input__container_form">
+              <img src="images/phone-black.svg" alt="">
+              <input required="true" class="input input_form" type="phone" name="phonr" placeholder="Номер телефона">
+            </div>
+            <div class="form__submit">
+              <p class="text_14 form__submitText">Нажимая на кнопку «Отправить», Вы принимаете условия <a class="form__submitLink" href="#">Соглашения</a></p>
+              <button type="submit" class="gradientButton text_18">Отправить<img class="gradientButton__img" src="images/arrow-right-purple.svg" alt="arrow"></button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__contacts">
+          <img class="footer__logo" src="images/logo.svg" alt="logo">
+          <div class="footer__rating">
+            <img src="images/star-pink.svg" alt="star"><p>5/5</p>
+          </div>
+          <button class="footer__button text_16">Написать директору</button>
+          <div class="contacts__links">
+            <div>
+              <p class="text_20 footer__header">Телефон</p>
+              <a href="tel:+84951208155" class="text_16 footer__text">8 (495) 120-81-55</a>
+            </div>
+            <div>
+              <p class="text_20 footer__header">Электронная почта</p>
+              <a href="mailto:info@kraskizdes.ru" class="text_16 footer__text">info@kraskizdes.ru</a>
+            </div>
+            <div class="footer__social">
+              <a href="#"><img src="images/vk.svg" alt="vk"></a>
+              <a href="#"><img src="images/youtube.svg" alt="youtube"></a>
+            </div>
+          </div>
+          <img class="footer__paymentInfo" src="images/paymentSystem.svg" alt="payment">
+        </div>
+        <div class="footer__about">
+          <a href="#" class="text_20 footer__header footer__header_about">О компании</a>
+          <a href="#" class="text_16 footer__text">О нас</a>
+          <a href="#" class="text_16 footer__text">Бренды</a>
+          <a href="#" class="text_16 footer__text">Вакансии</a>
+          <a href="#" class="text_16 footer__text">Для бизнеса</a>
+          <a href="#" class="text_16 footer__text">Магазины</a>
+          <a href="#" class="text_16 footer__text">Оплата</a>
+          <a href="#" class="text_16 footer__text">Доставка</a>
+          <a href="#" class="text_16 footer__text">Акции</a>
+          <a href="#" class="text_16 footer__text">Помощь</a>
+        </div>
+        <div class="footer__catalog">
+          <p class="text_20 footer__header">Каталог</p>
+          <div class="catalog__items">
+            <div class="catalog__column catalog__column_1">
+              <a href="#" class="text_16 footer__text">Спецпредложение</a>
+              <a href="#" class="text_16 footer__text">Краски для внутренних работ</a>
+              <a href="#" class="text_16 footer__text">Краски для наружных работ</a>
+              <a href="#" class="text_16 footer__text">Краски универсальные</a>
+              <a href="#" class="text_16 footer__text">Краски специального назначения</a>
+              <a href="#" class="text_16 footer__text">Антисептики, пропитки, лазури для дерева и камня</a>
+              <a href="#" class="text_16 footer__text">Лаки, масла, воски</a>
+              <a href="#" class="text_16 footer__text">Грунтовки</a>
+              <a href="#" class="text_16 footer__text">Декоративные штукатурки, фактурные краски</a>
+            </div>
+            <div class="catalog__column catalog__column_2">
+              <a href="#" class="text_16 footer__text">Декоративные дизайнерские краски</a>
+              <a href="#" class="text_16 footer__text">Монтажные пены и очистители</a>
+              <a href="#" class="text_16 footer__text">Клея, герметики, гидроизоляция</a>
+              <a href="#" class="text_16 footer__text">Затирки, сухие смеси</a>
+              <a href="#" class="text_16 footer__text">Растворители и очистители, спецсредства</a>
+              <a href="#" class="text_16 footer__text">Малярные инструменты, краскопульты</a>
+              <a href="#" class="text_16 footer__text">Морилки по дереву</a>
+              <a href="#" class="text_16 footer__text">Стеклообои, малярный флизелин, обои под покраску</a>
+              <a href="#" class="text_16 footer__text">Каталоги цветов, колеровочные карты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright text_16">© 2023 Интернет-магазин лакокрасочной продукции</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
