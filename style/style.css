@@ -152,6 +152,19 @@ button {
   border: none;
   outline: none;
 }
+.input__error {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #e50e78;
+  position: absolute;
+  top: 64px;
+  left: 20px;
+  display: none;
+}
+.input__error_active {
+  display: block;
+}
 .input__container {
   border: 1px solid #e50e78;
   border-radius: 15px;
@@ -160,6 +173,7 @@ button {
 .input__container_form {
   padding: 18px 25px;
   margin-bottom: 30px;
+  position: relative;
 }
 .input__container_form:first-of-type {
   margin-bottom: 20px;
@@ -453,6 +467,14 @@ button {
   font-size: 50px;
 }
 
+.gradientText {
+  background: linear-gradient(96deg, #dd3197 0%, #822faf 101.4%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .gradientButton {
   padding: 5px 5px 5px 30px;
   color: white;
@@ -462,16 +484,59 @@ button {
   display: flex;
   align-items: center;
   gap: 25px;
-  transition: all 3s ease-in-out;
+}
+.gradientButton_basket {
+  width: 353px;
+  justify-content: flex-end;
+  gap: 66px;
+}
+.gradientButton_basket_transparent {
+  width: 349px;
+  gap: 53px;
+  background: white;
+  position: relative;
+  padding: 3px 3px 3px 28px;
+  border-radius: 14px;
+  height: 57px;
+}
+.gradientButton_basket_transparent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: 15px;
+  background-image: linear-gradient(96deg, #dd3197 0%, #822faf 101.4%);
+}
+.gradientButton_basket_transparent:hover {
+  background: white !important;
 }
 .gradientButton:hover {
   background: linear-gradient(96deg, #FA67BF 0%, #BE63EF 101.4%);
-  font-size: 20px;
+}
+.gradientButton:hover .gradientButton__img_transparent {
+  background: linear-gradient(96deg, #FA67BF 0%, #BE63EF 101.4%);
+}
+.gradientButton_basket_transparent:hover::after {
+  background-image: linear-gradient(96deg, #FA67BF 0%, #BE63EF 101.4%) !important;
+}
+.gradientButton:hover .gradientText {
+  background: linear-gradient(96deg, #FA67BF 0%, #BE63EF 101.4%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .gradientButton__img {
   padding: 13px;
   background-color: white;
   border-radius: 10px;
+}
+.gradientButton__img_transparent {
+  background: linear-gradient(96deg, #dd3197 0%, #822faf 101.4%);
 }
 
 .categories__gradient {
@@ -680,4 +745,194 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.basket {
+  box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+  width: 786px;
+  height: 774px;
+  position: absolute;
+  top: 250px;
+  right: 180px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 40px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.basket_active {
+  display: flex;
+}
+.basket__header {
+  font-size: 24px;
+}
+.basket__count {
+  color: #9293b0;
+}
+.basket__top {
+  display: flex;
+  gap: 7px;
+  align-items: flex-end;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dfdff0;
+  margin-right: 50px;
+  margin-left: 30px;
+}
+.basket__items {
+  border-right: 3px solid #dfdff0;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.basket__item {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #dfdff0;
+  margin-right: 20px;
+}
+.basketItem {
+  max-width: 405px;
+  margin-right: 70px;
+}
+.basketItem__image {
+  padding: 25px 16px 20px 15px;
+  border: 2px solid #f4f6f8;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+.basketItem__name {
+  margin-bottom: 15px;
+}
+.basketItem__info {
+  display: flex;
+  gap: 34px;
+}
+.basketItem__colorName {
+  display: flex;
+  gap: 5px;
+  margin-left: 11px;
+}
+.basketItem__color {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.basketItem__color_orange {
+  background-color: #ED9039;
+}
+.basketItem__color_purple {
+  background-color: #B5AFDE;
+}
+.basket__price {
+  display: flex;
+  flex-direction: column;
+}
+.basket__price_count {
+  align-self: flex-end;
+  margin-top: 15px;
+}
+.basket__price_old {
+  color: #9293b0;
+  align-self: flex-end;
+  position: relative;
+}
+.basket__price_old::before {
+  content: "";
+  border-bottom: 1px solid #9293b0;
+  position: absolute;
+  top: -2px;
+  width: 92%;
+  height: 50%;
+  transform: rotate(-3deg);
+}
+.basket__delte {
+  margin-left: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: center;
+}
+.basket__bottom {
+  margin-top: auto;
+  flex-direction: column;
+  box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+}
+.basketBottom__buttons {
+  display: flex;
+  gap: 20px;
+}
+.basketResult {
+  display: flex;
+  gap: 20px;
+  align-self: flex-end;
+}
+.basketResult__text {
+  color: #9293b0;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3px;
+}
+.basketResult__price {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.applicationApproved {
+  width: 1224px;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3efff;
+  background-image: url(../images/paint-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50vh - 192.5px);
+  left: calc(50vw - 612px);
+  z-index: 4;
+  border-radius: 30px;
+}
+.applicationApproved__header {
+  font-size: 50px;
+}
+.applicationApproved__text {
+  color: #9293b0;
+  width: 643px;
+  text-align: center;
+}
+.applicationApproved__background {
+  background-color: #3b3c40;
+  opacity: 0.4;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.applicationApproved_active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+}
+.applicationApproved_none {
+  display: none;
+}
+.applicationApproved__button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }/*# sourceMappingURL=style.css.map */

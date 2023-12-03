@@ -178,6 +178,21 @@ button {
   border: none;
   outline: none;
 
+  &__error {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+    color: $pink;
+    position: absolute;
+    top: 64px;
+    left: 20px;
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
   &__container {
     border: 1px solid $pink;
     border-radius: 15px;
@@ -186,6 +201,7 @@ button {
     &_form {
       padding: 18px 25px;
       margin-bottom: 30px;
+      position: relative;
 
       &:first-of-type {
         margin-bottom: 20px;
@@ -519,6 +535,14 @@ button {
   }
 }
 
+.gradientText {
+  background: $buttonGradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .gradientButton {
   padding: 5px 5px 5px 30px;
   color: white;
@@ -528,17 +552,67 @@ button {
   display: flex;
   align-items: center;
   gap: 25px;
-  transition: all 3s ease-in-out;
+
+  &_basket {
+    width: 353px;
+    justify-content: flex-end;
+    gap: 66px;
+
+    &_transparent {
+      width: 349px;
+      gap: 53px;
+      background: white;
+      position: relative;
+      padding: 3px 3px 3px 28px;
+      border-radius: 14px;
+      height: 57px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -2px;
+        border-radius: 15px;
+        background-image: $buttonGradient
+      }
+
+      &:hover {
+        background: white!important;
+      }
+    }
+  }
 
   &:hover {
     background: $buttonGradientHover;
-    font-size: 20px;
+  }
+
+  &:hover &__img_transparent {
+    background: $buttonGradientHover;
+  }
+
+  &_basket_transparent:hover::after {
+    background-image: $buttonGradientHover!important;
+  }
+
+  &:hover .gradientText {
+    background: $buttonGradientHover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 
   &__img {
     padding: 13px;
     background-color: white;
     border-radius: 10px;
+
+    &_transparent {
+      background: $buttonGradient;
+    }
   }
 }
 
@@ -779,4 +853,223 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.basket {
+  box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+  width: 786px;
+  height: 774px;
+  position: absolute;
+  top: 250px;
+  right: 180px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 40px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+  &_active {
+    display: flex;
+  }
+
+  &__header {
+    font-size: 24px;
+  }
+
+  &__count {
+    color: $darkGrey;
+  }
+
+  &__top {
+    display: flex;
+    gap: 7px;
+    align-items: flex-end;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $line;
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+
+  &__items {
+    border-right: 3px solid $line;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  &__item {
+    display: flex;
+    padding:  20px 0;
+    border-bottom: 1px solid $line;
+    margin-right: 20px;
+  }
+
+  &Item {
+    max-width: 405px;
+    margin-right: 70px;
+
+    &__image {
+      padding: 25px 16px 20px 15px;
+      border: 2px solid $grey;
+      border-radius: 20px;
+      width: 100px;
+      height: 100px;
+      margin-right: 15px;
+    }
+
+    &__name {
+      margin-bottom: 15px;
+    }
+
+    &__info {
+      display: flex;
+      gap: 34px;
+    }
+
+    &__colorName {
+      display: flex;
+      gap: 5px;
+      margin-left: 11px;
+    }
+
+    &__color {
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+
+      &_orange {
+        background-color: #ED9039;
+      }
+
+      &_purple {
+        background-color: #B5AFDE;
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+
+    &_count {
+      align-self: flex-end;
+      margin-top: 15px;
+    }
+
+    &_old {
+      color: $darkGrey;
+      align-self: flex-end;
+      position: relative;
+      
+      &::before {
+        content: "";
+        border-bottom: 1px solid $darkGrey;
+        position: absolute;
+        top: -2px;
+        width: 92%;
+        height: 50%;
+        transform: rotate(-3deg);
+      }
+    }
+  }
+
+  &__delte {
+    margin-left: 30px;
+    height: fit-content;
+    align-self: center;
+  }
+
+  &__bottom {
+    margin-top: auto;
+    flex-direction: column;
+    box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &Bottom__buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  &Result {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+
+    &__text {
+      color: $darkGrey;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 3px;
+    }
+
+    &__price {
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+}
+
+.applicationApproved {
+  width: 1224px;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  background-color: $purpleLight;
+  background-image: url(../images/paint-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50vh - 192.5px);
+  left: calc(50vw - 612px);
+  z-index: 4;
+  border-radius: 30px;
+
+  &__header {
+    font-size: 50px;
+  }
+
+  &__text {
+    color: $darkGrey;
+    width: 643px;
+    text-align: center;
+  }
+
+  &__background {
+    background-color: $black;
+    opacity: 0.4;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  &_active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+  }
+
+  &_none {
+    display: none;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
 }
