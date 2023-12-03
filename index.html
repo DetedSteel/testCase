@@ -9,19 +9,32 @@
   </head>
   <body>
     <header class="header">
+      <nav>
+        <ul class="nav__list_mobile">
+          <li>
+            <a href="#"><img src="images/location.svg" alt="map" /></a>
+          </li>
+          <li>
+            <a href="#"><img class="logo_mobile" src="images/logo.svg" alt="logo" /></a>
+          </li>
+          <li>
+            <a href="tel:+74951208155"><img src="images/phone-black.svg" alt="phone" /></a>
+          </li>
+        </ul>
+      </nav>
       <nav class="nav nav_top">
         <ul class="nav__list">
           <li>
-            <a class="nav__item nav__item_picture" href="#"
-              ><img src="images/location.svg" alt="locationIcon" />
-              <p class="text_16">Магазины</p></a
-            >
+            <a class="nav__item nav__item_picture" href="#">
+              <img src="images/location.svg" alt="locationIcon" />
+              <p class="text_16">Магазины</p>
+            </a>
           </li>
           <li>
-            <a class="nav__item nav__item_picture" href="#"
-              ><img src="images/mail.svg" alt="email" />
-              <p class="text_16">info@kraskizdes.ru</p></a
-            >
+            <a class="nav__item nav__item_picture" href="mailto:info@kraskizdes.ru">
+              <img src="images/mail.svg" alt="email" />
+              <p class="text_16">info@kraskizdes.ru</p>
+            </a>
           </li>
         </ul>
         <ul class="nav__list nav__list_right">
@@ -47,6 +60,7 @@
       </nav>
       <div class="searchBlock">
         <a href="#" class="searchBlock__logo"><img src="images/logo.svg" alt="logo" /></a>
+        <button class="burgerButton"><img src="images/burger.svg" alt="menu" /></button>
         <button class="button button_catalog text_18">Каталог<img class="button__icon" src="images/catalog.svg" alt="catalogIcon" /></button>
         <div class="searchBlock__input input__container">
           <input class="input text_16" type="text" name="search" id="search" placeholder="Искать товары" />
@@ -59,16 +73,16 @@
             <a class="link__icon link__icon_account text_18" href="#">Войти</a>
           </li>
           <li>
-            <a class="link__icon link__icon_favourite text_18" href="#"
-              ><p class="counter counter_favourite text_14">7</p>
-              Избранное</a
-            >
+            <a class="link__icon link__icon_favourite text_18" href="#">
+              <p class="counter counter_favourite text_14">7</p>
+              Избранное
+            </a>
           </li>
           <li>
-            <a class="link__icon link__icon_cart text_18" href="#" id="basket_button"
-              ><p class="counter counter_cart text_14">4</p>
-              Корзина</a
-            >
+            <a class="link__icon link__icon_cart text_18" href="#" id="basket_button">
+              <p class="counter counter_cart text_14">4</p>
+              Корзина
+            </a>
           </li>
         </ul>
       </div>
@@ -136,7 +150,10 @@
       <nav class="nav nav_bottom">
         <ul class="nav__list nav__list_bottom">
           <li class="nav__item nav__item_grey">
-            <a class="nav__item_picture text_16" href="#"><img src="images/fire.svg" alt="" />Акции</a>
+            <a class="nav__item_picture text_16" href="#"><img src="images/fire.svg" alt="" /><span class="nav__item_desctop">Акции</span><span class="nav__item_mobile">Спецпредложения</span></a>
+          </li>
+          <li class="nav__item nav__item_grey nav__item_grey_mobile">
+            <a class="nav__item_picture text_16" href="#"><img src="images/sales-mobile.svg" alt="" />Акции</a>
           </li>
           <li class="nav__item nav__item_grey">
             <a class="nav__item_picture text_16" href="#"><img src="images/brands.svg" alt="" />Бренды</a>
@@ -156,6 +173,8 @@
         </ul>
         <a class="button button_phone" href="tel:+74951208155"><img src="images/phone.svg" alt="phone" />8 (495) 120-81-55</a>
       </nav>
+    </header>
+    <main>
       <section class="swiper slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide slider__wrapper">
@@ -164,47 +183,49 @@
                 <div class="saleText">
                   <p class="slider__text_30">до</p>
                   <img class="slider__text_minus" src="images/minus.svg" alt="" />
+                  <img class="slider__text_minus slider__text_minus_mobile" src="images/minus-mob.svg" alt="" />
                   <p class="slider__text_100">25</p>
                   <p class="slider__text_65">%</p>
-                  <p class="slider__text_24">Скидки на выделенные товары Benjamine Moore</p>
+                  <p class="slider__text_24 slider__text_24_big">Скидки на выделенные товары Benjamine Moore</p>
                 </div>
                 <img class="slider__image_big" src="images/paint1.png" alt="paint" />
               </div>
               <a class="slider__link slider__link_arrow" href=""><img src="images/arrow-top-right.svg" alt="arrow" /></a>
             </div>
-            <div class="slider__item">
+            <div class="slider__item slider__item_small">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__spetialText">-25%</p>
-                  <img class="slider__image text_16" src="images/paint2.png" alt="" />
+                  <p class="slider__spetialText text_16"><span class="slider__spetialText_desctop">-25%</span><span class="slider__spetialText_mobile">Новинка</span></p>
+                  <img class="slider__image" src="images/paint2.png" alt="" />
                 </div>
-                <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
+                <p class="slider__productName text_20">Benjamin Moore Regal <br class="slider__productName_mobBr"/>Select 549 <br class="slider__productName_descBr" />Waterborne Interior Paint Eggshell
+                </p>
                 <div class="slider__textContainer">
                   <p class="slider__text_16">0.95 л</p>
                   <img src="images/dot.svg" alt="dot" />
-                  <p class="slider__text_16">2 л</p>
+                  <p class="slider__text_16 slider__text_16_desc">2 л</p>
                 </div>
                 <div class="slider__textContainer">
-                  <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                  <p class="slider__text_24 slider__text_24_black"><span class="slider__text_24_desc">от</span> 3600 ₽</p>
                   <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
                 </div>
               </div>
               <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
             </div>
-            <div class="slider__item">
+            <div class="slider__item slider__item_small">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__spetialText text_16">-10%</p>
+                  <p class="slider__spetialText text_16"><span class="slider__spetialText_desctop">-10%</span><span class="slider__spetialText_mobile">Новинка</span></p>
                   <img class="slider__image" src="images/paint3.png" alt="" />
                 </div>
-                <p class="slider__productName text_20">Benjamin Moore Aura 532 Bath &<br />Spa Waterborne Interior Paint Matte Finish</p>
+                <p class="slider__productName text_20">Benjamin Moore Aura<br class="slider__productName_mobBr"/> 532 Bath &<br class="slider__productName_descBr" />Spa Waterborne Interior Paint Matte Finish</p>
                 <div class="slider__textContainer">
                   <p class="slider__text_16">0.95 л</p>
                   <img src="images/dot.svg" alt="dot" />
-                  <p class="slider__text_16">2 л</p>
+                  <p class="slider__text_16 slider__text_16_desc">2 л</p>
                 </div>
                 <div class="slider__textContainer">
-                  <p class="slider__text_24 slider__text_24_black">от 5200 ₽</p>
+                  <p class="slider__text_24 slider__text_24_black"><span class="slider__text_24_desc">от</span> 5200 ₽</p>
                   <p class="slider__text_16 slider__text_16_deleted">5720 ₽</p>
                 </div>
               </div>
@@ -217,6 +238,7 @@
                 <div class="saleText">
                   <p class="slider__text_30">до</p>
                   <img class="slider__text_minus" src="images/minus.svg" alt="" />
+                  <img class="slider__text_minus slider__text_minus_mobile" src="images/minus-mob.svg" alt="" />
                   <p class="slider__text_100">25</p>
                   <p class="slider__text_65">%</p>
                   <p class="slider__text_24">Скидки на выделенные товары Benjamine Moore</p>
@@ -225,39 +247,39 @@
               </div>
               <a class="slider__link slider__link_arrow" href=""><img src="images/arrow-top-right.svg" alt="arrow" /></a>
             </div>
-            <div class="slider__item">
+            <div class="slider__item slider__item_small">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__spetialText">-25%</p>
-                  <img class="slider__image text_16" src="images/paint2.png" alt="" />
+                  <p class="slider__spetialText text_16"><span class="slider__spetialText_desctop">-25%</span><span class="slider__spetialText_mobile">Новинка</span></p>
+                  <img class="slider__image" src="images/paint2.png" alt="" />
                 </div>
                 <p class="slider__productName text_20">Benjamin Moore Regal Select 549<br />Waterborne Interior Paint Eggshell</p>
                 <div class="slider__textContainer">
                   <p class="slider__text_16">0.95 л</p>
                   <img src="images/dot.svg" alt="dot" />
-                  <p class="slider__text_16">2 л</p>
+                  <p class="slider__text_16 slider__text_16_desc">2 л</p>
                 </div>
                 <div class="slider__textContainer">
-                  <p class="slider__text_24 slider__text_24_black">от 3600 ₽</p>
+                  <p class="slider__text_24 slider__text_24_black"><span class="slider__text_24_desc">от</span> 3600 ₽</p>
                   <p class="slider__text_16 slider__text_16_deleted">4500 ₽</p>
                 </div>
               </div>
               <a class="slider__link slider__link_cart" href=""><img src="images/cartWhite.svg" alt="arrow" /></a>
             </div>
-            <div class="slider__item">
+            <div class="slider__item slider__item_small">
               <div class="slider__item_form">
                 <div class="slider__imageContainer">
-                  <p class="slider__spetialText text_16">-10%</p>
+                  <p class="slider__spetialText text_16"><span class="slider__spetialText_desctop">-10%</span><span class="slider__spetialText_mobile">Новинка</span></p>
                   <img class="slider__image" src="images/paint3.png" alt="" />
                 </div>
                 <p class="slider__productName text_20">Benjamin Moore Aura 532 Bath &<br />Spa Waterborne Interior Paint Matte Finish</p>
                 <div class="slider__textContainer">
                   <p class="slider__text_16">0.95 л</p>
                   <img src="images/dot.svg" alt="dot" />
-                  <p class="slider__text_16">2 л</p>
+                  <p class="slider__text_16 slider__text_16_desc">2 л</p>
                 </div>
                 <div class="slider__textContainer">
-                  <p class="slider__text_24 slider__text_24_black">от 5200 ₽</p>
+                  <p class="slider__text_24 slider__text_24_black"><span class="slider__text_24_desc">от</span> 5200 ₽</p>
                   <p class="slider__text_16 slider__text_16_deleted">5720 ₽</p>
                 </div>
               </div>
@@ -269,8 +291,6 @@
           <img src="images/arrow-right.svg" alt="" />
         </button>
       </section>
-    </header>
-    <main>
       <section class="services mainSection">
         <div class="serviceCard">
           <img class="serviceCard__img" src="images/card1pic.png" alt="" />
@@ -288,14 +308,14 @@
           <p class="serviceCard__text text_16">Соответствуем требованиям и стандартам качества</p>
         </div>
       </section>
-      <section class="popular mainSection">
+      <section class="mainSection popular">
         <div class="mainSection__header">
           <p class="mainSection__header_text">Популярные категории</p>
-          <button class="gradientButton text_18">Все категории<img class="gradientButton__img" src="images/arrow-right-purple.svg" alt="arrow" /></button>
+          <button class="gradientButton gradientButton_desc text_18">Все категории<img class="gradientButton__img" src="images/arrow-right-purple.svg" alt="arrow" /></button>
         </div>
         <div class="popular">
           <div class="popular__categories">
-            <a href="#" class="categorie__name categorie__name_image"><img src="images/fire.svg" alt="" />Акции</a>
+            <a href="#" class="categorie__name categorie__name_image"><img src="images/fire.svg" alt="" /><span class="categorie__name_desctop">Акции</span><span class="categorie__name_mobile">Спецпредложения</span></a>
             <a href="#" class="categorie__name categorie__name_active">Для внутренних работ</a>
             <a href="#" class="categorie__name">Для наружных работ</a>
             <a href="#" class="categorie__name">Универсальные</a>
@@ -456,7 +476,7 @@
       </section>
       <div id="approvedMsg" class="applicationApproved_none applicationApproved_active">
         <div class="applicationApproved">
-          <button id="closeApprovedPopUp" class="applicationApproved__button"><img src="images/icon-X.svg" alt="close"></button>
+          <button id="closeApprovedPopUp" class="applicationApproved__button"><img src="images/icon-X.svg" alt="close" /></button>
           <p class="applicationApproved__header">Заявка принята</p>
           <p class="text_18 applicationApproved__text">Благодарим вас за заявку! Мы приняли её, и наш менеджер свяжется с вами в ближайшее время.</p>
         </div>
