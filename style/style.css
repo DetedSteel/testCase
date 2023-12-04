@@ -1536,8 +1536,10 @@ button {
     margin-bottom: 0;
   }
 }
-.footer__catalog {
-  display: none;
+@media screen and (max-width: 430px) {
+  .footer__catalog {
+    display: none;
+  }
 }
 
 .catalog__items {
