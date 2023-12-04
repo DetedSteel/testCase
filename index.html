@@ -8,6 +8,31 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="mobileMenu">
+      <button id="mobileMenuClose" class="mobileMenu__closeBtn"><img src="images/X-white.svg" alt="close"></button>
+      <div class="mobileMenu__main">
+        <nav>
+          <ul class="mobileMenu__links">
+            <li><a class="mobileMenu__link" href="#"><img src="images/catalog.svg" alt="catalog">Каталог</a></li>
+            <li><a class="mobileMenu__link" href="#"><img src="images/cart-pink.svg" alt="cart">Корзина</a></li>
+            <li><a class="mobileMenu__link" href="#"><img src="images/heart-pink.svg" alt="favourite">Избранное</a></li>
+            <li><a class="mobileMenu__link" href="#"><img src="images/account-pink.svg" alt="profile">Профиль</a></li>
+          </ul>
+          <ul class="mobileMenu__links">
+            <li><a class="mobileMenu__link" href="mailto:info@kraskizdes.ru"><img src="images/mail-pink.svg" alt="mail">info@kraskizdes.ru</a></li>
+            <li><a class="mobileMenu__link" href="tel:+74951208155"><img src="images/phone-pink.svg" alt="phone">8 (495) 120-81-55</a></li>
+          </ul>
+          <ul class="mobileMenu__links">
+            <li><a href="#" class="mobileMenu__link">Доставка</a></li>
+            <li><a href="#" class="mobileMenu__link">Оплата</a></li>
+            <li><a href="#" class="mobileMenu__link">Возврат</a></li>
+            <li><a href="#" class="mobileMenu__link">Помощь</a></li>
+            <li><a href="#" class="mobileMenu__link">О нас</a></li>
+            <li><a href="#" class="mobileMenu__link">Для бизнеса</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <header class="header">
       <nav>
         <ul class="nav__list_mobile">
@@ -60,7 +85,7 @@
       </nav>
       <div class="searchBlock">
         <a href="#" class="searchBlock__logo"><img src="images/logo.svg" alt="logo" /></a>
-        <button class="burgerButton"><img src="images/burger.svg" alt="menu" /></button>
+        <button id="burgerButton" class="burgerButton"><img src="images/burger.svg" alt="menu" /></button>
         <button class="button button_catalog text_18">Каталог<img class="button__icon" src="images/catalog.svg" alt="catalogIcon" /></button>
         <div class="searchBlock__input input__container">
           <input class="input text_16" type="text" name="search" id="search" placeholder="Искать товары" />

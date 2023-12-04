@@ -20,6 +20,10 @@ const nameError = document.querySelector("#nameError");
 const phoneError = document.querySelector("#phoneError");
 const approvedMsg = document.querySelector("#approvedMsg");
 const closeApprovedPopUp = document.querySelector("#closeApprovedPopUp");
+const burgerButton = document.querySelector("#burgerButton");
+const mobileMenu = document.querySelector(".mobileMenu");
+const mobileMenuClose = document.querySelector("#mobileMenuClose");
+const mobileMenuMain = document.querySelector(".mobileMenu__main");
 
 basketBtn.addEventListener("mouseover", () => {
   basket.classList.add("basket_active");
@@ -83,13 +87,27 @@ form.addEventListener("submit", (e) => {
   if (!phoneE && !nameE) {
     console.log(`Имя: ${e.target.name.value}; Телефон: ${e.target.phone.value}`);
     approvedMsg.classList.remove("applicationApproved_none");
-    document.body.style.overflowY = 'hidden'
+    document.body.style.overflowY = "hidden";
   }
 });
 
-closeApprovedPopUp.addEventListener('click', () => {
+closeApprovedPopUp.addEventListener("click", () => {
   approvedMsg.classList.add("applicationApproved_none");
-  phone.value = ''
-  form.name.value = ''
-  document.body.style.overflowY = 'scroll'
-})
+  phone.value = "";
+  form.name.value = "";
+  document.body.style.overflowY = "scroll";
+});
+
+burgerButton.addEventListener("click", () => {
+  mobileMenu.classList.add("mobileMenu_active");
+  mobileMenuMain.classList.add("mobileMenu__main_active");
+  mobileMenuClose.classList.add("mobileMenu__closeBtn_active");
+  document.body.style.overflowY = "hidden";
+});
+
+mobileMenuClose.addEventListener("click", () => {
+  setTimeout(() => mobileMenu.classList.remove("mobileMenu_active"), 450)
+  mobileMenuMain.classList.remove("mobileMenu__main_active");
+  mobileMenuClose.classList.remove("mobileMenu__closeBtn_active");
+  document.body.style.overflowY = "scroll";
+});
