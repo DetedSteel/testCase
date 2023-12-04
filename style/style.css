@@ -415,8 +415,10 @@ button {
     padding: 11px 20px;
   }
 }
-.input__container_form:first-of-type {
-  margin-bottom: 10px;
+@media screen and (max-width: 430px) {
+  .input__container_form:first-of-type {
+    margin-bottom: 10px;
+  }
 }
 .input_form {
   background-color: transparent;

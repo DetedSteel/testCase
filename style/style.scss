@@ -434,7 +434,9 @@ button {
       }
 
       &:first-of-type {
-        margin-bottom: 10px;
+        @media screen and (max-width: 430px) {
+          margin-bottom: 10px;
+        }
       }
     }
   }
