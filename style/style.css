@@ -1309,6 +1309,7 @@ button {
     max-width: 375px;
     border-radius: 0;
     padding: 29px 20px 10px 10px;
+    margin-bottom: 0;
   }
 }
 .footer__top {
