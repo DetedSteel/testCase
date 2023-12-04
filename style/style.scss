@@ -38,7 +38,7 @@ button {
     font-size: 20px;
     line-height: 120%;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 14px;
       line-height: 130%;
     }
@@ -48,7 +48,7 @@ button {
     font-size: 18px;
     line-height: 130%;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 14px;
     }
   }
@@ -57,7 +57,7 @@ button {
     font-size: 16px;
     line-height: 140%;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 12px;
     }
   }
@@ -66,7 +66,7 @@ button {
     font-size: 14px;
     line-height: 140%;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 12px;
     }
   }
@@ -79,7 +79,7 @@ button {
   flex-direction: column;
   gap: 15px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     max-width: 375px;
     margin-bottom: 46px;
   }
@@ -97,7 +97,7 @@ button {
   border-radius: 10px;
   border: none;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     display: block;
   }
 }
@@ -124,7 +124,7 @@ button {
     &_bottom {
       gap: 15px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         margin-right: 0;
         gap: 12px;
         margin-left: 10px;
@@ -146,7 +146,7 @@ button {
     background-color: $grey;
     padding: 13px 180px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -156,7 +156,7 @@ button {
     align-items: center;
 
     &_desctop {
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: none;
       }
     }
@@ -164,7 +164,7 @@ button {
     &_mobile {
       display: none;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: inline;
       }
     }
@@ -175,13 +175,13 @@ button {
       padding: 13px 24px;
       gap: 5px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         padding: 8px 12px;
       }
 
       &_mobile {
         display: none;
-        @media (max-width: 375px) {
+        @media screen and (max-width: 430px) {
           display: flex;
         }
       }
@@ -192,7 +192,7 @@ button {
       gap: 7px;
       align-items: center;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         font-size: 15px;
         img {
           width: 20px;
@@ -209,7 +209,7 @@ button {
   align-self: flex-end;
   margin-right: 180px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     margin-right: 10px;
     gap: 8px;
   }
@@ -217,7 +217,7 @@ button {
   &__logo {
     margin-right: 34px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -227,7 +227,7 @@ button {
     width: 915px;
     justify-content: space-between;
     margin-right: 40px;
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 305px;
       padding: 3px 3px 3px 20px;
       margin-right: 0;
@@ -243,7 +243,7 @@ button {
     display: flex;
     gap: 30px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -264,7 +264,7 @@ button {
     gap: 13px;
     margin-right: 25px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -274,7 +274,7 @@ button {
     background-color: $pink;
     padding: 13px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       padding: 8px;
 
       img {
@@ -295,7 +295,7 @@ button {
     padding: 13px 24px;
     color: white;
     gap: 10px;
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -306,7 +306,7 @@ button {
   outline: none;
 
   &__img {
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 20px;
       height: 20px;
     }
@@ -337,7 +337,7 @@ button {
       margin-bottom: 30px;
       position: relative;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         padding: 11px 20px;
       }
 
@@ -405,7 +405,7 @@ button {
   box-sizing: border-box !important;
   height: fit-content !important;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     max-width: 375px;
     padding: 10px 10px 40px 10px !important;
     border-radius: 20px;
@@ -417,7 +417,7 @@ button {
     display: flex !important;
     gap: 20px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: grid !important;
       row-gap: 10px;
       column-gap: 9px;
@@ -429,7 +429,7 @@ button {
     width: 375px;
     height: 422px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 173px;
       grid-row: 2;
       height: 295px;
@@ -438,7 +438,7 @@ button {
     &_desc {
       display: block;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: none;
       }
     }
@@ -446,7 +446,7 @@ button {
     &_mob {
       display: none;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: block;
       }
     }
@@ -457,7 +457,7 @@ button {
       background-color: white;
       padding: 25px;
       clip-path: polygon(100% 7.109%, 100% 7.109%, 99.895% 5.956%, 99.592% 4.862%, 99.107% 3.842%, 98.456% 2.911%, 97.657% 2.082%, 96.725% 1.372%, 95.677% 0.793%, 94.529% 0.362%, 93.298% 0.093%, 92% 0%, 8% 0%, 8% 0%, 6.702% 0.093%, 5.471% 0.362%, 4.324% 0.793%, 3.275% 1.372%, 2.343% 2.082%, 1.544% 2.911%, 0.893% 3.842%, 0.408% 4.862%, 0.105% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.105% 94.044%, 0.408% 95.138%, 0.893% 96.158%, 1.544% 97.09%, 2.343% 97.918%, 3.275% 98.628%, 4.324% 99.207%, 5.471% 99.638%, 6.702% 99.907%, 8% 100%, 73.333% 100%, 73.333% 100%, 74.631% 99.907%, 75.862% 99.638%, 77.01% 99.207%, 78.058% 98.628%, 78.99% 97.918%, 79.79% 97.09%, 80.44% 96.158%, 80.925% 95.138%, 81.229% 94.044%, 81.333% 92.891%, 81.333% 90.521%, 81.333% 90.521%, 81.438% 89.368%, 81.741% 88.274%, 82.226% 87.254%, 82.877% 86.323%, 83.676% 85.494%, 84.609% 84.784%, 85.657% 84.206%, 86.805% 83.775%, 88.036% 83.505%, 89.333% 83.412%, 92% 83.412%, 92% 83.412%, 93.298% 83.319%, 94.529% 83.05%, 95.677% 82.619%, 96.725% 82.041%, 97.657% 81.33%, 98.456% 80.502%, 99.107% 79.57%, 99.592% 78.55%, 99.895% 77.456%, 100% 76.303%, 100% 7.109%);
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         padding: 10px;
         width: 173px;
         clip-path: polygon(100% 5.725%, 100% 5.725%, 99.887% 4.797%, 99.558% 3.916%, 99.032% 3.094%, 98.327% 2.344%, 97.46% 1.677%, 96.45% 1.105%, 95.314% 0.639%, 94.07% 0.292%, 92.736% 0.075%, 91.329% 0%, 8.671% 0%, 8.671% 0%, 7.264% 0.075%, 5.93% 0.292%, 4.686% 0.639%, 3.55% 1.105%, 2.54% 1.677%, 1.673% 2.344%, 0.968% 3.094%, 0.442% 3.916%, 0.113% 4.797%, 0% 5.725%, 0% 94.275%, 0% 94.275%, 0.113% 95.203%, 0.442% 96.084%, 0.968% 96.906%, 1.673% 97.656%, 2.54% 98.323%, 3.55% 98.895%, 4.686% 99.361%, 5.93% 99.708%, 7.264% 99.925%, 8.671% 100%, 63.584% 100%, 63.584% 100%, 64.99% 99.925%, 66.324% 99.708%, 67.568% 99.361%, 68.704% 98.895%, 69.715% 98.323%, 70.581% 97.656%, 71.287% 96.906%, 71.812% 96.084%, 72.141% 95.203%, 72.254% 94.275%, 72.254% 87.405%, 72.254% 87.405%, 72.368% 86.476%, 72.696% 85.595%, 73.222% 84.774%, 73.927% 84.023%, 74.794% 83.356%, 75.804% 82.784%, 76.94% 82.318%, 78.184% 81.971%, 79.518% 81.754%, 80.925% 81.679%, 91.329% 81.679%, 91.329% 81.679%, 92.736% 81.604%, 94.07% 81.388%, 95.314% 81.04%, 96.45% 80.575%, 97.46% 80.002%, 98.327% 79.335%, 99.032% 78.585%, 99.558% 77.764%, 99.887% 76.883%, 100% 75.954%, 100% 5.725%);
@@ -470,7 +470,7 @@ button {
       padding-top: 43px;
       clip-path: polygon(100% 7.109%, 100% 7.109%, 99.943% 5.956%, 99.778% 4.862%, 99.515% 3.842%, 99.161% 2.911%, 98.727% 2.082%, 98.22% 1.372%, 97.65% 0.793%, 97.026% 0.362%, 96.357% 0.093%, 95.652% 0%, 4.348% 0%, 4.348% 0%, 3.643% 0.093%, 2.974% 0.362%, 2.35% 0.793%, 1.78% 1.372%, 1.273% 2.082%, 0.839% 2.911%, 0.485% 3.842%, 0.222% 4.862%, 0.057% 5.956%, 0% 7.109%, 0% 92.891%, 0% 92.891%, 0.057% 94.044%, 0.222% 95.138%, 0.485% 96.158%, 0.839% 97.09%, 1.273% 97.918%, 1.78% 98.628%, 2.35% 99.207%, 2.974% 99.638%, 3.643% 99.907%, 4.348% 100%, 85.507% 100%, 85.507% 100%, 86.213% 99.907%, 86.882% 99.638%, 87.505% 99.207%, 88.075% 98.628%, 88.582% 97.918%, 89.016% 97.09%, 89.37% 96.158%, 89.633% 95.138%, 89.798% 94.044%, 89.855% 92.891%, 89.855% 90.521%, 89.855% 90.521%, 89.912% 89.368%, 90.077% 88.274%, 90.34% 87.254%, 90.694% 86.323%, 91.128% 85.494%, 91.635% 84.784%, 92.205% 84.206%, 92.829% 83.775%, 93.498% 83.505%, 94.203% 83.412%, 95.652% 83.412%, 95.652% 83.412%, 96.357% 83.319%, 97.026% 83.05%, 97.65% 82.619%, 98.22% 82.041%, 98.727% 81.33%, 99.161% 80.502%, 99.515% 79.57%, 99.778% 78.55%, 99.943% 77.456%, 100% 76.303%, 100% 7.109%);
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         background: url(../images/radial-gradientM.svg) no-repeat 0 0, $purleGradient;
         width: 355px;
         height: 295px;
@@ -486,7 +486,7 @@ button {
     &_big {
       width: 690px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         width: 355px;
         grid-row: 1;
         grid-column: 1/3;
@@ -494,7 +494,7 @@ button {
     }
 
     &_small {
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         height: 262px;
       }
     }
@@ -511,7 +511,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 40px;
       height: 40px;
 
@@ -537,14 +537,14 @@ button {
       height: 10px;
       width: 45px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: none;
       }
 
       &_mobile {
         display: none;
 
-        @media (max-width: 375px) {
+        @media screen and (max-width: 430px) {
           display: block;
           width: 30px;
           height: 5px;
@@ -559,7 +559,7 @@ button {
       margin-bottom: 25px;
       align-items: center;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         margin-bottom: 7px;
         flex-direction: column;
         align-items: flex-start;
@@ -568,7 +568,7 @@ button {
       }
 
       img {
-        @media (max-width: 375px) {
+        @media screen and (max-width: 430px) {
           display: none;
         }
       }
@@ -582,13 +582,13 @@ button {
       color: $darkGrey;
       position: relative;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         font-size: 12px;
         margin-top: 3px;
       }
 
       &_desc {
-        @media (max-width: 375px) {
+        @media screen and (max-width: 430px) {
           display: none;
         }
       }
@@ -615,19 +615,19 @@ button {
         color: $black;
       }
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         height: fit-content;
       }
 
       &_desc {
         display: inline;
 
-        @media (max-width: 375px) {
+        @media screen and (max-width: 430px) {
           display: none;
         }
       }
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         font-size: 18px;
       }
 
@@ -645,7 +645,7 @@ button {
       left: 0;
       top: 100px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         font-size: 24px;
         font-weight: 600;
         top: 93px;
@@ -660,7 +660,7 @@ button {
       margin-top: 5px;
       height: 100px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         font-size: 45px;
       }
     }
@@ -672,7 +672,7 @@ button {
       font-weight: 700;
       color: white;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         font-size: 70px;
         height: 81px;
       }
@@ -682,7 +682,7 @@ button {
   &__image {
     width: 105px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 74px;
       height: 85px;
     }
@@ -693,7 +693,7 @@ button {
       border-radius: 30px;
       position: relative;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         border-radius: 10px;
         padding: 22px 40px;
         height: 130px;
@@ -706,7 +706,7 @@ button {
       top: 70px;
       right: 47px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         width: 142px;
         top: 43px;
         right: 19px;
@@ -724,7 +724,7 @@ button {
     left: 15px;
     color: white;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       padding: 1px 8px;
       border-radius: 20px;
       top: 6px;
@@ -735,7 +735,7 @@ button {
     &_mobile {
       display: none;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: inline;
         color: white;
       }
@@ -745,7 +745,7 @@ button {
       display: inline;
       color: white;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: none;
       }
     }
@@ -759,7 +759,7 @@ button {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 152px;
       height: 36px;
       margin-top: 8px;
@@ -768,7 +768,7 @@ button {
     &_descBr {
       display: inline;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: none;
       }
     }
@@ -776,7 +776,7 @@ button {
     &_mobBr {
       display: none;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: inline;
       }
     }
@@ -795,7 +795,7 @@ button {
     z-index: 2;
     filter: drop-shadow(3px 6px 14px rgba(115, 103, 151, 0.15));
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
 
@@ -828,7 +828,7 @@ button {
   background-repeat: repeat-y;
   align-content: flex-start;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     background-image: url(../images/Benjamin.svg);
     width: 335px;
     height: 210px;
@@ -842,7 +842,7 @@ button {
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     flex-direction: column;
     gap: 16px;
     margin-bottom: 86px!important;
@@ -862,7 +862,7 @@ button {
   column-gap: 80px;
   row-gap: 12px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     background-image: url(../images/card-back-mobile.svg);
     max-width: 355px;
     background-size: cover;
@@ -876,7 +876,7 @@ button {
     grid-row: 1/3;
     align-self: center;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 86px;
     }
   }
@@ -886,7 +886,7 @@ button {
     font-size: 24px;
     font-weight: 600;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 18px;
     }
   }
@@ -900,7 +900,7 @@ button {
 .popular {
   position: relative;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     max-width: 375px !important;
     margin-bottom: 88px;
   }
@@ -913,7 +913,7 @@ button {
     position: relative;
     margin-bottom: 30px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       gap: 12px;
     }
   }
@@ -941,7 +941,7 @@ button {
   display: none;
   width: 355px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     display: flex;
     flex-direction: column;
   }
@@ -952,7 +952,7 @@ button {
   margin: 0 auto;
   margin-bottom: 152px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     max-width: 355px;
     margin-bottom: 0;
   }
@@ -965,7 +965,7 @@ button {
     &_text {
       font-size: 50px;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         font-size: 32px;
       }
     }
@@ -991,7 +991,7 @@ button {
   gap: 25px;
 
   &_desc {
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -1004,7 +1004,7 @@ button {
     align-self: center;
     display: none;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: flex;
     }
 
@@ -1076,7 +1076,7 @@ button {
     background-color: white;
     border-radius: 10px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       padding: 8px;
       border-radius: 8px;
       box-sizing: content-box;
@@ -1099,7 +1099,7 @@ button {
   top: 0;
   transform: rotate(180deg);
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     display: none;
   }
 }
@@ -1110,7 +1110,7 @@ button {
   border-radius: 15px;
   white-space: nowrap;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     padding: 8px 12px;
     border-radius: 10px;
 
@@ -1124,21 +1124,21 @@ button {
     background-color: $pink;
     color: white;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 14px;
     }
   }
 
   &_desctop {
     font-size: inherit;
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
 
   &_mobile {
     display: none;
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: inline;
       font-size: 15px;
     }
@@ -1154,7 +1154,7 @@ button {
   display: flex;
   gap: 20px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     flex-wrap: wrap;
     gap: 10px;
   }
@@ -1164,14 +1164,14 @@ button {
   position: relative;
 
   &:first-of-type {
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       img {
         transform: rotateY(0deg);
       }
     }
   }
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     width: 173px;
     height: 260px;
     overflow: hidden;
@@ -1184,7 +1184,7 @@ button {
     pointer-events: none;
     height: 260px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       transform: rotateY(180deg);
     }
   }
@@ -1203,7 +1203,7 @@ button {
     background-color: rgba(244, 246, 248, 0.5);
     backdrop-filter: blur(6px);
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       padding: 10px;
       bottom: 10px;
       left: 10px;
@@ -1219,7 +1219,7 @@ button {
     grid-column: 1;
     justify-self: flex-start;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 15px;
     }
   }
@@ -1230,7 +1230,7 @@ button {
     opacity: 0.6;
     justify-self: flex-start;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 14px;
     }
   }
@@ -1240,7 +1240,7 @@ button {
     grid-row: 3;
     justify-self: flex-start;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 20px;
       height: 20px;
     }
@@ -1248,7 +1248,7 @@ button {
 }
 
 .sales {
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     margin-bottom: 88px;
   }
 
@@ -1258,7 +1258,7 @@ button {
     gap: 9px;
     filter: drop-shadow(5px 15px 50px rgba(173, 178, 201, 0.45));
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       flex-wrap: wrap;
     }
   }
@@ -1274,7 +1274,7 @@ button {
     height: 497px;
     position: relative;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       padding: 49px 20px;
       border-radius: 20px;
       height: 481px;
@@ -1286,7 +1286,7 @@ button {
     font-size: 50px;
     margin-bottom: 20px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       font-size: 32px;
     }
   }
@@ -1304,7 +1304,7 @@ button {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: none;
     }
   }
@@ -1322,7 +1322,7 @@ button {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       flex-direction: column-reverse;
     }
   }
@@ -1336,7 +1336,7 @@ button {
   border-radius: 50px;
   padding: 60px 60px 25px 60px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 430px) {
     max-width: 375px;
     border-radius: 0;
     padding: 29px 20px 10px 10px;
@@ -1349,7 +1349,7 @@ button {
     padding-bottom: 50px;
     border-bottom: 1px solid #d9d9d9;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       flex-direction: row-reverse;
     }
   }
@@ -1361,7 +1361,7 @@ button {
   &__header {
     margin-bottom: 15px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       margin-bottom: 12px;
     }
 
@@ -1375,7 +1375,7 @@ button {
     column-gap: 50px;
     height: fit-content;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       display: flex;
       flex-direction: column;
     }
@@ -1385,13 +1385,13 @@ button {
     grid-column: 1;
     grid-row: 1;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 41px;
       height: 41px;
     }
 
     &_desc {
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: none;
       }
     }
@@ -1399,7 +1399,7 @@ button {
     &_mob {
       display: none;
 
-      @media (max-width: 375px) {
+      @media screen and (max-width: 430px) {
         display: block;
         margin-bottom: 40px;
       }
@@ -1422,7 +1422,7 @@ button {
     gap: 15px;
     height: 30px;
     
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       margin-bottom: 25px;
     }
   }
@@ -1432,7 +1432,7 @@ button {
     grid-row: 3;
     align-self: center;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 139px;
       align-self: flex-start;
       margin-bottom: 36px;
@@ -1440,7 +1440,7 @@ button {
   }
 
   &__star {
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 24px;
     }
   }
@@ -1470,7 +1470,7 @@ button {
     color: $darkGrey;
     margin-top: 25px;
 
-    @media (max-width: 375px) {
+    @media screen and (max-width: 430px) {
       width: 303px;
       text-align: center;
       margin: 28px auto;
