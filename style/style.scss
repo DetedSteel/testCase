@@ -1282,10 +1282,10 @@ button {
 
   &__picture {
     pointer-events: none;
-    height: 260px;
 
     @media screen and (max-width: 430px) {
       transform: rotateY(180deg);
+      height: 260px;
     }
   }
 
