@@ -305,6 +305,13 @@ button {
   border: none;
   outline: none;
 
+  &__img {
+    @media screen and (max-width: 375px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   &__error {
     font-size: 12px;
     font-weight: 500;
@@ -330,8 +337,12 @@ button {
       margin-bottom: 30px;
       position: relative;
 
+      @media screen and (max-width: 375px) {
+        padding: 11px 20px;
+      }
+
       &:first-of-type {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -422,6 +433,22 @@ button {
       width: 173px;
       grid-row: 2;
       height: 295px;
+    }
+
+    &_desc {
+      display: block;
+
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
+    }
+
+    &_mob {
+      display: none;
+
+      @media screen and (max-width: 375px) {
+        display: block;
+      }
     }
 
     &_form {
@@ -695,12 +722,14 @@ button {
     position: absolute;
     top: 15px;
     left: 15px;
+    color: white;
 
     @media screen and (max-width: 375px) {
       padding: 1px 8px;
       border-radius: 20px;
       top: 6px;
       left: 6px;
+      font-size: 12px;
     }
 
     &_mobile {
@@ -816,7 +845,7 @@ button {
   @media screen and (max-width: 375px) {
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 86px;
+    margin-bottom: 86px!important;
   }
 }
 
@@ -873,6 +902,7 @@ button {
 
   @media screen and (max-width: 375px) {
     max-width: 375px !important;
+    margin-bottom: 88px;
   }
 
   &__categories {
@@ -889,6 +919,34 @@ button {
   }
 }
 
+.slider__dot {
+  width: 5px;
+  height: 5px;
+  background-image: url(../images/slider-dot.svg);
+
+  &_active {
+    background-image: url(../images/slider-dot-active.svg);
+  }
+
+  &s {
+    display: flex;
+    gap: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-self: center;
+  }
+}
+
+.section__controls_mobile {
+  display: none;
+  width: 355px;
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .mainSection {
   max-width: 1560px;
   margin: 0 auto;
@@ -896,6 +954,7 @@ button {
 
   @media screen and (max-width: 375px) {
     max-width: 355px;
+    margin-bottom: 0;
   }
 
   &__header {
@@ -903,12 +962,12 @@ button {
     justify-content: space-between;
     margin-bottom: 60px;
 
-    @media screen and (max-width: 375px) {
-      font-size: 32px;
-    }
-
     &_text {
       font-size: 50px;
+
+      @media screen and (max-width: 375px) {
+        font-size: 32px;
+      }
     }
   }
 }
@@ -934,6 +993,29 @@ button {
   &_desc {
     @media screen and (max-width: 375px) {
       display: none;
+    }
+  }
+
+  &_mobile {
+    padding: 3px 3px 3px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: fit-content;
+    align-self: center;
+    display: none;
+
+    @media screen and (max-width: 375px) {
+      display: flex;
+    }
+
+    &_sales {
+      margin: 30px auto;
+      margin-bottom: 0;
+    }
+
+    &_form {
+      align-self: flex-start;
+      margin-bottom: 20px;
     }
   }
 
@@ -993,6 +1075,14 @@ button {
     padding: 13px;
     background-color: white;
     border-radius: 10px;
+
+    @media screen and (max-width: 375px) {
+      padding: 8px;
+      border-radius: 8px;
+      box-sizing: content-box;
+      width: 20px;
+      height: 20px;
+    }
 
     &_transparent {
       background: $buttonGradient;
@@ -1158,11 +1248,19 @@ button {
 }
 
 .sales {
+  @media screen and (max-width: 375px) {
+    margin-bottom: 88px;
+  }
+
   &__items {
     position: relative;
     display: flex;
-    gap: 20px;
+    gap: 9px;
     filter: drop-shadow(5px 15px 50px rgba(173, 178, 201, 0.45));
+
+    @media screen and (max-width: 375px) {
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -1175,11 +1273,22 @@ button {
     padding: 62px 125px;
     height: 497px;
     position: relative;
+
+    @media screen and (max-width: 375px) {
+      padding: 49px 20px;
+      border-radius: 20px;
+      height: 481px;
+      margin-bottom: 88px;
+    }
   }
 
   &__header {
     font-size: 50px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 375px) {
+      font-size: 32px;
+    }
   }
 
   &__text {
@@ -1194,6 +1303,10 @@ button {
     border-radius: 40px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
   }
 
   &__submit {
@@ -1208,6 +1321,10 @@ button {
 
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 375px) {
+      flex-direction: column-reverse;
+    }
   }
 }
 
@@ -1219,11 +1336,21 @@ button {
   border-radius: 50px;
   padding: 60px 60px 25px 60px;
 
+  @media screen and (max-width: 375px) {
+    max-width: 375px;
+    border-radius: 0;
+    padding: 29px 20px 10px 10px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
     border-bottom: 1px solid #d9d9d9;
+
+    @media screen and (max-width: 375px) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__text {
@@ -1232,6 +1359,10 @@ button {
 
   &__header {
     margin-bottom: 15px;
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: 12px;
+    }
 
     &_about {
       margin-bottom: 3px;
@@ -1242,11 +1373,36 @@ button {
     display: grid;
     column-gap: 50px;
     height: fit-content;
+
+    @media screen and (max-width: 375px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__logo {
     grid-column: 1;
     grid-row: 1;
+
+    @media screen and (max-width: 375px) {
+      width: 41px;
+      height: 41px;
+    }
+
+    &_desc {
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
+    }
+
+    &_mob {
+      display: none;
+
+      @media screen and (max-width: 375px) {
+        display: block;
+        margin-bottom: 40px;
+      }
+    }
   }
 
   &__rating {
@@ -1264,12 +1420,28 @@ button {
     display: flex;
     gap: 15px;
     height: 30px;
+    
+    @media screen and (max-width: 375px) {
+      margin-bottom: 25px;
+    }
   }
 
   &__paymentInfo {
     grid-column: 2;
     grid-row: 3;
     align-self: center;
+
+    @media screen and (max-width: 375px) {
+      width: 139px;
+      align-self: flex-start;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__star {
+    @media screen and (max-width: 375px) {
+      width: 24px;
+    }
   }
 
   &__about {
@@ -1296,6 +1468,17 @@ button {
   &__copyright {
     color: $darkGrey;
     margin-top: 25px;
+
+    @media screen and (max-width: 375px) {
+      width: 303px;
+      text-align: center;
+      margin: 28px auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &__catalog {
+    display: none;
   }
 }
 
