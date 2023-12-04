@@ -322,6 +322,11 @@ button {
     left: 20px;
     display: none;
 
+    @media screen and (max-width: 430px) {
+      top: 43px;
+      font-size: 8px;
+    }
+
     &_active {
       display: block;
     }
@@ -989,6 +994,14 @@ button {
   display: flex;
   align-items: center;
   gap: 25px;
+
+  @media screen and (max-width: 375px) {
+    padding: 3px 3px 3px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: fit-content;
+    align-self: center;
+  }
 
   &_desc {
     @media screen and (max-width: 430px) {
@@ -1683,14 +1696,30 @@ button {
   z-index: 4;
   border-radius: 30px;
 
+  @media screen and (max-width: 430px) {
+    width: 355px;
+    height: 248px;
+    background-image: url(../images/mob-approve-back.svg);
+    gap: 24px;
+    top: calc(50vh - 124px);
+    left: calc(50vw - 177.5px);
+  }
+
   &__header {
     font-size: 50px;
+    @media screen and (max-width: 430px) {
+      font-size: 26px;
+    }
   }
 
   &__text {
     color: $darkGrey;
     width: 643px;
     text-align: center;
+    @media screen and (max-width: 430px) {
+      width: 335px;
+      font-size: 15px;
+    }
   }
 
   &__background {
@@ -1723,5 +1752,12 @@ button {
     position: absolute;
     right: 20px;
     top: 20px;
+
+    &_img {
+      @media screen and (max-width: 430px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
 }

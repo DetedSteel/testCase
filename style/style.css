@@ -312,6 +312,12 @@ button {
   left: 20px;
   display: none;
 }
+@media screen and (max-width: 430px) {
+  .input__error {
+    top: 43px;
+    font-size: 8px;
+  }
+}
 .input__error_active {
   display: block;
 }
@@ -970,6 +976,16 @@ button {
   align-items: center;
   gap: 25px;
 }
+@media screen and (max-width: 375px) {
+  .gradientButton {
+    padding: 3px 3px 3px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-self: center;
+  }
+}
 @media screen and (max-width: 430px) {
   .gradientButton_desc {
     display: none;
@@ -1618,13 +1634,34 @@ button {
   z-index: 4;
   border-radius: 30px;
 }
+@media screen and (max-width: 430px) {
+  .applicationApproved {
+    width: 355px;
+    height: 248px;
+    background-image: url(../images/mob-approve-back.svg);
+    gap: 24px;
+    top: calc(50vh - 124px);
+    left: calc(50vw - 177.5px);
+  }
+}
 .applicationApproved__header {
   font-size: 50px;
+}
+@media screen and (max-width: 430px) {
+  .applicationApproved__header {
+    font-size: 26px;
+  }
 }
 .applicationApproved__text {
   color: #9293b0;
   width: 643px;
   text-align: center;
+}
+@media screen and (max-width: 430px) {
+  .applicationApproved__text {
+    width: 335px;
+    font-size: 15px;
+  }
 }
 .applicationApproved__background {
   background-color: #3b3c40;
@@ -1653,4 +1690,10 @@ button {
   position: absolute;
   right: 20px;
   top: 20px;
+}
+@media screen and (max-width: 430px) {
+  .applicationApproved__button_img {
+    width: 24px;
+    height: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

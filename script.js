@@ -83,6 +83,7 @@ form.addEventListener("submit", (e) => {
   if (!phoneE && !nameE) {
     console.log(`Имя: ${e.target.name.value}; Телефон: ${e.target.phone.value}`);
     approvedMsg.classList.remove("applicationApproved_none");
+    document.body.style.overflowY = 'hidden'
   }
 });
 
@@ -90,4 +91,5 @@ closeApprovedPopUp.addEventListener('click', () => {
   approvedMsg.classList.add("applicationApproved_none");
   phone.value = ''
   form.name.value = ''
+  document.body.style.overflowY = 'scroll'
 })
