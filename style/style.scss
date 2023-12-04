@@ -158,6 +158,10 @@ button {
   flex-direction: column;
   gap: 15px;
 
+  @media screen and (min-width: 430px) {
+    margin-top: -15px;
+  }
+
   @media screen and (max-width: 430px) {
     max-width: 375px;
     margin-bottom: 46px;
@@ -190,10 +194,14 @@ button {
     gap: 40px;
 
     &_mobile {
-      display: flex;
+      display: none;
       max-width: 355px;
       justify-content: space-between;
       margin: 10px auto;
+
+      @media screen and (max-width: 430px) {
+        display: flex;
+      }
     }
 
     &_right {
