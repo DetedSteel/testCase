@@ -36,17 +36,24 @@ basket.addEventListener("mouseleave", () => {
 const phoneChars = [];
 const phoneMask = "+7 (9";
 phone.addEventListener("input", (e) => {
-  console;
-  if (e.target.value == "7" || e.target.value == "8" || e.target.value == "9" || e.target.value == "+") {
+  console.log(e);
+  let value = e.target.value
+  const isNum = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"].includes(e.data)
+  if (!isNum && e.data != null && e.data != '+') {
+    console.log(value)
+    e.target.value = value.slice(0, value.length - 1)
+  } else if ((value == "7" || value == "8" || value == "9") && isNum || value == "+") {
     e.target.value = phoneMask;
-  } else if (e.target.value.length === 7) {
+  } else if (isNum && (value.length == 1 || value.slice(0, value.length - 1) == "+7 " || value.slice(0, value.length - 1) == "+7" || value.slice(0, value.length - 1) == "+7 (")) {
+    e.target.value = phoneMask + e.data
+  } else if (value.length === 7 && isNum) {
     e.target.value += ")-";
-  } else if (e.target.value.length === 12) {
+  } else if (value.length === 12 && isNum) {
     e.target.value += "-";
-  } else if (e.target.value.length === 15) {
+  } else if (value.length === 15 && isNum) {
     e.target.value += "-";
-  } else if (e.target.value.length > 18) {
-    e.target.value = e.target.value.slice(0, 18);
+  } else if (value.length > 18) {
+    e.target.value = value.slice(0, 18);
   }
 });
 
@@ -77,7 +84,7 @@ form.addEventListener("submit", (e) => {
     phoneError.innerText = "Телефон не введён!";
     phoneError.classList.add("input__error_active");
     phoneE = true;
-  } else if (!e.target.phone.value.match(/\+7 \(9\d{2}\)-\d{3}-\d{2}-\d{2}/)) {
+  } else if (!e.target.phone.value.match(/\+7 \(9\d{2}\)-\d{3}-\d{2}-\d{2}/) && !e.target.phone.value.match(/\+79\d{9}/)) {
     phoneError.innerText = "Некорректный телефон!";
     phoneError.classList.add("input__error_active");
     phoneE = true;
@@ -106,7 +113,7 @@ burgerButton.addEventListener("click", () => {
 });
 
 mobileMenuClose.addEventListener("click", () => {
-  setTimeout(() => mobileMenu.classList.remove("mobileMenu_active"), 450)
+  setTimeout(() => mobileMenu.classList.remove("mobileMenu_active"), 450);
   mobileMenuMain.classList.remove("mobileMenu__main_active");
   mobileMenuClose.classList.remove("mobileMenu__closeBtn_active");
   document.body.style.overflowY = "scroll";
